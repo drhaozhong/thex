@@ -1,0 +1,409 @@
+@relation "commons-io"
+
+@attribute iid numeric
+@attribute enclosureType string
+@attribute catchedType string
+@attribute isFromArgument {true, false}
+@attribute varNames string
+@attribute varTypes string
+@attribute constants string
+@attribute methodNames string
+@attribute methodExceptions string
+@attribute otherExceptions string
+@attribute classid{java.lang.IllegalArgumentException,java.io.EOFException,java.io.IOException,java.lang.IllegalStateException,java.lang.NullPointerException,java.lang.UnsupportedOperationException,java.io.UnsupportedEncodingException,org.apache.commons.io.input.XmlStreamReaderException,org.apache.commons.io.input.compatibility.XmlStreamReaderException}
+
+@data
+0,"MethodDeclaration","null",true,"big_endian value little_endian ","java.lang.String java.nio.ByteOrder boolean ","","equals toString ","","",java.lang.IllegalArgumentException
+1,"IfStatement","null",false,"value eof ","int ","","","IOException ","",java.io.EOFException
+2,"IfStatement","null",true,"file to delete ","java.io.File boolean ","","exists doDelete ","IOException ","",java.io.IOException
+3,"IfStatement","null",true,"replacement ","char boolean ","","isIllegalFileNameChar ","","",java.lang.IllegalArgumentException
+4,"IfStatement","null",false,"os name ","java.lang.String ","NULL ","","","",java.io.IOException
+5,"IfStatement","null",true,"path ","java.lang.String ","NULL ","","IOException ","java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+6,"SwitchStatement","null",true,"","int ","","","IOException ","java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalStateException
+7,"SwitchStatement","null",true,"","int ","","","IOException ","java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalStateException
+8,"IfStatement","null",false,"norm path ","java.lang.String ","NULL ","","IOException ","java.io.IOException ",java.lang.IllegalArgumentException
+9,"MethodDeclaration","null",false,"line norm path ","java.lang.String int char ","NULL ","length charAt ","IOException ","java.lang.IllegalArgumentException ",java.io.IOException
+10,"IfStatement","null",false,"","int ","","","IOException ","",java.io.IOException
+11,"IfStatement","null",true,"path ","java.lang.String boolean ","","isEmpty ","IOException ","java.io.IOException java.io.IOException ",java.lang.IllegalArgumentException
+12,"IfStatement","null",false,"lines ","java.util.List int ","","size ","IOException ","java.lang.IllegalArgumentException java.io.IOException ",java.io.IOException
+13,"IfStatement","null",false,"lines tok ","int java.util.List java.util.StringTokenizer ","","size countTokens ","IOException ","java.lang.IllegalArgumentException java.io.IOException ",java.io.IOException
+14,"IfStatement","null",false,"bytes ","long ","","","IOException ","java.io.IOException ",java.io.IOException
+15,"CatchClause","java.lang.NumberFormatException",true,"bytes path free space ","long java.lang.String java.lang.Long java.io.IOException ","Command line ' '- check path is valid for path ' ' did not find free space in response  ","parseLong ","IOException ","java.io.IOException ",java.io.IOException
+16,"IfStatement","null",false,"proc ","java.lang.Process int ","","exitValue ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+17,"IfStatement","null",false,"lines ","java.util.List boolean ","","isEmpty ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+18,"CatchClause","java.lang.InterruptedException",true,"english err out cmd attribs inr proc max timeout monitor lines ","java.io.InputStream java.lang.String java.lang.Process java.io.BufferedReader java.util.List java.io.OutputStream int java.lang.Thread java.lang.String void java.util.Locale ","NULL Command line did not return any info  Command line returned OS error code ' for command  ' for command  ","close exitValue readLine asList toLowerCase start getInputStream trim getOutputStream isEmpty waitFor ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+19,"IfStatement","null",true,"stream ","java.io.OutputStream ","NULL ","","IOException ArrayIndexOutOfBoundsException IllegalArgumentException ","java.lang.ArrayIndexOutOfBoundsException ",java.lang.IllegalArgumentException
+20,"IfStatement","null",true,"start directory ","java.io.File ","NULL ","","IOException ","",java.lang.NullPointerException
+21,"MethodDeclaration","null",true,"name io case ","java.lang.String org.apache.commons.io.IOCase boolean ","","equals getName ","","",java.lang.IllegalArgumentException
+22,"IfStatement","null",true,"str2 str1 ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+23,"IfStatement","null",true,"str2 str1 ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+24,"IfStatement","null",true,"charset name ","java.lang.String boolean ","NULL ","isEmpty ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+25,"IfStatement","null",true,"bytes length ","int int ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+26,"IfStatement","null",true,"directory ","java.io.File ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+27,"IfStatement","null",true,"names ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+28,"IfStatement","null",true,"names ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+29,"IfStatement","null",true,"file ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException java.io.FileNotFoundException ",java.io.IOException
+30,"IfStatement","null",true,"file ","java.io.File boolean ","","canRead ","IOException ","java.io.IOException java.io.FileNotFoundException ",java.io.IOException
+31,"IfStatement","null",true,"file ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+32,"IfStatement","null",true,"file ","java.io.File boolean ","","canWrite ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+33,"IfStatement","null",false,"parent ","java.io.File boolean ","","mkdirs isDirectory ","IOException ","java.io.IOException java.io.IOException ",java.io.IOException
+34,"IfStatement","null",false,"success ","boolean ","","","IOException ","",java.io.IOException
+35,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","","java.lang.NullPointerException ",java.lang.IllegalArgumentException
+36,"IfStatement","null",true,"file filter ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.NullPointerException
+37,"IfStatement","null",true,"file2 file1 ","java.io.File boolean ","","isDirectory ","IOException ","",java.io.IOException
+38,"IfStatement","null",true,"file2 file1 ","java.io.File boolean ","","isDirectory ","IOException ","",java.io.IOException
+39,"IfStatement","null",false,"url ","java.net.URL java.lang.String boolean ","file ","getProtocol equals ","","",java.lang.IllegalArgumentException
+40,"IfStatement","null",true,"dest dir ","java.io.File ","NULL ","","IOException ","java.lang.IllegalArgumentException ",java.lang.NullPointerException
+41,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","isDirectory exists ","IOException ","java.lang.NullPointerException ",java.lang.IllegalArgumentException
+42,"IfStatement","null",true,"src file ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+43,"IfStatement","null",true,"src file dest file ","java.io.File java.lang.String boolean ","","getCanonicalPath equals ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+44,"IfStatement","null",false,"parent file ","java.io.File boolean ","","mkdirs isDirectory ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+45,"IfStatement","null",true,"dest file ","java.io.File boolean ","","exists canWrite ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+46,"IfStatement","null",true,"dest file ","java.io.File boolean ","","isDirectory exists ","IOException ","java.io.IOException ",java.io.IOException
+47,"IfStatement","null",false,"src len dst len ","long ","","","IOException ","java.io.IOException ",java.io.IOException
+48,"IfStatement","null",true,"src dir ","java.io.File ","NULL ","","IOException ","java.lang.IllegalArgumentException java.lang.NullPointerException java.lang.IllegalArgumentException ",java.lang.NullPointerException
+49,"IfStatement","null",true,"src dir ","java.io.File boolean ","","isDirectory exists ","IOException ","java.lang.NullPointerException java.lang.NullPointerException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+50,"IfStatement","null",true,"dest dir ","java.io.File ","NULL ","","IOException ","java.lang.NullPointerException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.NullPointerException
+51,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","isDirectory exists ","IOException ","java.lang.NullPointerException java.lang.IllegalArgumentException java.lang.NullPointerException ",java.lang.IllegalArgumentException
+52,"IfStatement","null",true,"src dir ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException ",java.io.IOException
+53,"IfStatement","null",true,"dest dir src dir ","java.io.File java.lang.String boolean ","","getCanonicalPath equals ","IOException ","java.io.IOException ",java.io.IOException
+54,"IfStatement","null",true,"src ","java.io.File ","NULL ","","FileNotFoundException ","java.lang.NullPointerException java.io.FileNotFoundException ",java.lang.NullPointerException
+55,"IfStatement","null",true,"dest ","java.io.File ","NULL ","","FileNotFoundException ","java.lang.NullPointerException java.io.FileNotFoundException ",java.lang.NullPointerException
+56,"IfStatement","null",false,"src files ","java.io.File ","NULL ","","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+57,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+58,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","mkdirs isDirectory ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+59,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","canWrite ","IOException ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+60,"IfStatement","null",true,"src ","java.io.File ","NULL ","","IOException ","java.io.IOException ",java.lang.NullPointerException
+61,"IfStatement","null",true,"src ","java.io.File boolean ","","isDirectory ","IOException ","java.lang.NullPointerException ",java.io.IOException
+62,"IfStatement","null",true,"srcs ","java.lang.Iterable ","NULL ","","IOException ","",java.lang.NullPointerException
+63,"IfStatement","null",true,"directory ","java.io.File boolean ","","delete ","IOException ","",java.io.IOException
+64,"IfStatement","null",true,"directory ","java.io.File ","NULL ","","IOException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+65,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","IOException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+66,"IfStatement","null",false,"exception ","java.io.IOException ","NULL ","","IOException ","",java.io.IOException
+67,"IfStatement","null",true,"directory ","java.io.File boolean ","","exists ","IOException ","java.lang.IllegalArgumentException java.io.IOException ",java.lang.IllegalArgumentException
+68,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","IOException ","java.lang.IllegalArgumentException java.io.IOException ",java.lang.IllegalArgumentException
+69,"IfStatement","null",false,"files ","java.io.File ","NULL ","","IOException ","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.io.IOException
+70,"IfStatement","null",true,"file ","java.io.File boolean ","","delete ","IOException ","java.io.FileNotFoundException ",java.io.IOException
+71,"IfStatement","null",false,"exception ","java.io.IOException ","NULL ","","IOException ","",java.io.IOException
+72,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException ",java.io.IOException
+73,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException ",java.io.IOException
+74,"IfStatement","null",true,"file ","java.io.File boolean ","","exists ","","",java.lang.IllegalArgumentException
+75,"IfStatement","null",true,"file ","java.io.File boolean ","","exists ","","",java.lang.IllegalArgumentException
+76,"IfStatement","null",true,"directory ","java.io.File boolean ","","exists ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+77,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+78,"IfStatement","null",true,"reference ","java.io.File ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+79,"IfStatement","null",true,"reference ","java.io.File boolean ","","exists ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+80,"IfStatement","null",true,"date ","java.util.Date ","NULL ","","","",java.lang.IllegalArgumentException
+81,"IfStatement","null",true,"file ","java.io.File ","NULL ","","","",java.lang.IllegalArgumentException
+82,"IfStatement","null",true,"reference ","java.io.File ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+83,"IfStatement","null",true,"reference ","java.io.File boolean ","","exists ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+84,"IfStatement","null",true,"date ","java.util.Date ","NULL ","","","",java.lang.IllegalArgumentException
+85,"IfStatement","null",true,"file ","java.io.File ","NULL ","","","",java.lang.IllegalArgumentException
+86,"IfStatement","null",true,"file ","java.io.File boolean ","","isDirectory ","IOException ","",java.lang.IllegalArgumentException
+87,"IfStatement","null",true,"src dir ","java.io.File boolean ","","isDirectory ","IOException ","org.apache.commons.io.FileExistsException java.io.IOException java.io.IOException ",java.io.IOException
+88,"IfStatement","null",true,"dest dir separator src dir ","java.io.File java.lang.String boolean ","","getCanonicalPath startsWith ","IOException ","java.io.IOException org.apache.commons.io.FileExistsException java.io.IOException ",java.io.IOException
+89,"IfStatement","null",true,"src dir ","java.io.File boolean ","","exists ","IOException ","java.io.IOException org.apache.commons.io.FileExistsException java.io.IOException ",java.io.IOException
+90,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","isDirectory ","IOException ","java.io.FileNotFoundException ",java.io.IOException
+91,"IfStatement","null",true,"src file ","java.io.File boolean ","","isDirectory ","IOException ","org.apache.commons.io.FileExistsException java.io.IOException java.io.IOException ",java.io.IOException
+92,"IfStatement","null",true,"dest file ","java.io.File boolean ","","isDirectory ","IOException ","java.io.IOException org.apache.commons.io.FileExistsException java.io.IOException ",java.io.IOException
+93,"IfStatement","null",true,"src file ","java.io.File boolean ","","delete ","IOException ","java.io.IOException org.apache.commons.io.FileExistsException java.io.IOException ",java.io.IOException
+94,"IfStatement","null",true,"dest dir ","java.io.File boolean ","","isDirectory ","IOException ","java.io.FileNotFoundException ",java.io.IOException
+95,"IfStatement","null",true,"src ","java.io.File ","NULL ","","FileNotFoundException ","java.lang.NullPointerException java.io.FileNotFoundException ",java.lang.NullPointerException
+96,"IfStatement","null",true,"dest ","java.io.File ","NULL ","","FileNotFoundException ","java.lang.NullPointerException java.io.FileNotFoundException ",java.lang.NullPointerException
+97,"IfStatement","null",true,"file ","java.io.File ","NULL ","","IOException ","",java.lang.NullPointerException
+98,"IfStatement","null",true,"file ","java.io.File ","NULL ","","","",java.lang.NullPointerException
+99,"IfStatement","null",true,"path ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+100,"IfStatement","null",false,"exit when finished ","boolean ","","","","",java.lang.IllegalStateException
+101,"IfStatement","null",true,"canonical parent ","java.lang.String ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+102,"IfStatement","null",false,"offset ","int ","","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+103,"IfStatement","null",true,"path ","java.lang.String int char ","","charAt ","","",java.lang.IllegalArgumentException
+104,"IfStatement","null",true,"file name2 file name1 ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+105,"IfStatement","null",true,"output stream ","java.io.OutputStream ","NULL ","","","",java.lang.NullPointerException
+106,"IfStatement","null",true,"output stream ","java.io.OutputStream ","NULL ","","","",java.lang.NullPointerException
+107,"IfStatement","null",true,"input stream ","java.io.InputStream ","NULL ","","","",java.lang.NullPointerException
+108,"IfStatement","null",true,"input stream ","java.io.InputStream ","NULL ","","","",java.lang.NullPointerException
+109,"IfStatement","null",true,"size max_value ","int long java.lang.Integer ","","","IOException ","",java.lang.IllegalArgumentException
+110,"IfStatement","null",true,"size ","int ","","","IOException ","java.io.IOException ",java.lang.IllegalArgumentException
+111,"IfStatement","null",true,"size offset ","int ","","","IOException ","java.lang.IllegalArgumentException ",java.io.IOException
+112,"IfStatement","null",false,"resource ","java.net.URL ","NULL ","","IOException ","",java.io.IOException
+113,"IfStatement","null",true,"to skip ","long ","","","IOException ","",java.lang.IllegalArgumentException
+114,"IfStatement","null",true,"to skip ","long ","","","IOException ","",java.lang.IllegalArgumentException
+115,"IfStatement","null",true,"to skip ","long ","","","IOException ","",java.lang.IllegalArgumentException
+116,"IfStatement","null",true,"to skip ","long ","","","IOException ","java.io.EOFException ",java.lang.IllegalArgumentException
+117,"IfStatement","null",true,"skipped to skip ","long ","","","IOException ","java.lang.IllegalArgumentException ",java.io.EOFException
+118,"IfStatement","null",true,"to skip ","long ","","","IOException ","java.io.EOFException ",java.lang.IllegalArgumentException
+119,"IfStatement","null",true,"skipped to skip ","long ","","","IOException ","java.lang.IllegalArgumentException ",java.io.EOFException
+120,"IfStatement","null",true,"skipped to skip ","long ","","","IOException ","",java.io.EOFException
+121,"IfStatement","null",true,"length ","int ","","","IOException ","",java.lang.IllegalArgumentException
+122,"IfStatement","null",true,"length ","int ","","","IOException ","",java.lang.IllegalArgumentException
+123,"IfStatement","null",true,"length actual ","int ","","","IOException ","",java.io.EOFException
+124,"IfStatement","null",true,"length actual ","int ","","","IOException ","",java.io.EOFException
+125,"IfStatement","null",false,"expected actual ","int ","","","IOException ","",java.io.EOFException
+126,"IfStatement","null",true,"reader ","java.io.Reader ","NULL ","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+127,"CatchClause","java.io.IOException",false,"cached line line buffered reader finished ","java.lang.String boolean java.io.BufferedReader ","NULL ","isValidLine readLine ","","",java.lang.IllegalStateException
+128,"MethodDeclaration","null",false,"","","","","","",java.lang.UnsupportedOperationException
+129,"IfStatement","null",true,"delegate ","java.util.Comparator ","NULL ","","","",java.lang.IllegalArgumentException
+130,"IfStatement","null",true,"magic number ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+131,"IfStatement","null",true,"magic number ","java.lang.String boolean ","","isEmpty ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+132,"IfStatement","null",true,"offset ","long ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+133,"IfStatement","null",true,"magic number ","byte ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+134,"IfStatement","null",true,"magic number length ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+135,"IfStatement","null",true,"offset ","long ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+136,"IfStatement","null",true,"filter2 filter1 ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","",java.lang.IllegalArgumentException
+137,"IfStatement","null",true,"pattern ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+138,"IfStatement","null",true,"pattern ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+139,"IfStatement","null",true,"pattern ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+140,"IfStatement","null",true,"pattern ","java.util.regex.Pattern ","NULL ","","","",java.lang.IllegalArgumentException
+141,"IfStatement","null",true,"filter2 filter1 ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","",java.lang.IllegalArgumentException
+142,"IfStatement","null",true,"suffix ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+143,"IfStatement","null",true,"suffixes ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+144,"IfStatement","null",true,"suffixes ","java.util.List ","NULL ","","","",java.lang.IllegalArgumentException
+145,"IfStatement","null",true,"wildcard ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+146,"IfStatement","null",true,"wildcards ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+147,"IfStatement","null",true,"wildcards ","java.util.List ","NULL ","","","",java.lang.IllegalArgumentException
+148,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+149,"IfStatement","null",true,"names ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+150,"IfStatement","null",true,"names ","java.util.List ","NULL ","","","",java.lang.IllegalArgumentException
+151,"IfStatement","null",true,"prefix ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+152,"IfStatement","null",true,"prefixes ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+153,"IfStatement","null",true,"prefixes ","java.util.List ","NULL ","","","",java.lang.IllegalArgumentException
+154,"IfStatement","null",true,"filter ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","",java.lang.IllegalArgumentException
+155,"IfStatement","null",true,"size ","long ","","","","",java.lang.IllegalArgumentException
+156,"IfStatement","null",true,"filter ","java.io.FilenameFilter ","NULL ","","","",java.lang.IllegalArgumentException
+157,"IfStatement","null",true,"filter ","java.io.FileFilter ","NULL ","","","",java.lang.IllegalArgumentException
+158,"IfStatement","null",true,"filter ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+159,"IfStatement","null",false,"file ","java.io.File ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+160,"IfStatement","null",true,"filter ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+161,"IfStatement","null",false,"file ","java.io.File ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+162,"IfStatement","null",true,"filters ","org.apache.commons.io.filefilter.IOFileFilter ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+163,"IfStatement","null",true,"filters ","org.apache.commons.io.filefilter.IOFileFilter int ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+164,"IfStatement","null",true,"wildcard ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+165,"IfStatement","null",true,"wildcards ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+166,"IfStatement","null",true,"wildcards ","java.util.List ","NULL ","","","",java.lang.IllegalArgumentException
+167,"IfStatement","null",false,"mark supported ","boolean ","","","","",java.lang.UnsupportedOperationException
+168,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+169,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+170,"IfStatement","null",false,"mark supported ","boolean ","","","IOException ","java.io.IOException java.io.IOException ",java.lang.UnsupportedOperationException
+171,"IfStatement","null",false,"mark ","long ","","","IOException ","java.lang.UnsupportedOperationException java.io.IOException ",java.io.IOException
+172,"IfStatement","null",false,"position readlimit mark ","long ","","","IOException ","java.lang.UnsupportedOperationException java.io.IOException ",java.io.IOException
+173,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+174,"IfStatement","null",false,"throw eof exception ","boolean ","","","EOFException ","",java.io.EOFException
+175,"IfStatement","null",false,"mark supported ","boolean ","","","","",java.lang.UnsupportedOperationException
+176,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+177,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+178,"IfStatement","null",false,"mark supported ","boolean ","","","IOException ","java.io.IOException java.io.IOException ",java.lang.UnsupportedOperationException
+179,"IfStatement","null",false,"mark ","long ","","","IOException ","java.lang.UnsupportedOperationException java.io.IOException ",java.io.IOException
+180,"IfStatement","null",false,"position readlimit mark ","long ","","","IOException ","java.lang.UnsupportedOperationException java.io.IOException ",java.io.IOException
+181,"IfStatement","null",false,"eof ","boolean ","","","IOException ","",java.io.IOException
+182,"IfStatement","null",false,"throw eof exception ","boolean ","","","EOFException ","",java.io.EOFException
+183,"IfStatement","null",true,"array ","char ","NULL ","","","java.lang.IndexOutOfBoundsException ",java.lang.NullPointerException
+184,"IfStatement","null",true,"","long ","","","","",java.lang.IllegalArgumentException
+185,"MethodDeclaration","null",false,"","","","","","",java.lang.UnsupportedOperationException
+186,"IfStatement","null",true,"boms length ","org.apache.commons.io.ByteOrderMark int ","NULL ","","","",java.lang.IllegalArgumentException
+187,"IfStatement","null",true,"boms bom ","java.util.List org.apache.commons.io.ByteOrderMark boolean ","","contains ","IOException ","",java.lang.IllegalArgumentException
+188,"IfStatement","null",false,"utf_16 charset ","java.nio.charset.Charset java.nio.charset.StandardCharsets ","","","IOException ","java.io.UnsupportedEncodingException ",java.io.UnsupportedEncodingException
+189,"IfStatement","null",false,"utf_16 charset ","java.nio.charset.Charset java.nio.charset.StandardCharsets ","","","IOException ","java.io.UnsupportedEncodingException ",java.io.UnsupportedEncodingException
+190,"IfStatement","null",true,"length count read ","int ","","","IOException ","",java.lang.IllegalStateException
+191,"IfStatement","null",false,"current last byte pos ","int ","","","IOException ","java.lang.IllegalStateException ",java.lang.IllegalStateException
+192,"IfStatement","null",false,"left over ","byte ","NULL ","","IOException ","java.lang.IllegalStateException ",java.lang.IllegalStateException
+193,"IfStatement","null",false,"line length bytes ","int ","","","IOException ","",java.lang.IllegalStateException
+194,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+195,"MethodDeclaration","null",false,"","","","","","",java.lang.UnsupportedOperationException
+196,"IfStatement","null",false,"count eof ","int ","","","IOException EOFException ","",java.io.EOFException
+197,"MethodDeclaration","null",false,"","","","","IOException EOFException ","",java.lang.UnsupportedOperationException
+198,"MethodDeclaration","null",false,"","","","","IOException EOFException ","",java.lang.UnsupportedOperationException
+199,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+200,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+201,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+202,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+203,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+204,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+205,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+206,"CatchClause","org.apache.commons.io.input.XmlStreamReaderException",false,"xml enc xml guess enc bom enc ","java.lang.String ","","calculateRawEncoding ","IOException ","",org.apache.commons.io.input.XmlStreamReaderException
+207,"CatchClause","org.apache.commons.io.input.XmlStreamReaderException",true,"xml enc http content type xml guess enc lenient bom enc ","java.lang.String boolean ","","calculateHttpEncoding ","IOException ","",org.apache.commons.io.input.XmlStreamReaderException
+208,"IfStatement","null",true,"utf_8 xml guess enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+209,"IfStatement","null",true,"utf_8 xml enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+210,"IfStatement","null",true,"xml guess enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+211,"IfStatement","null",true,"xml enc utf_16 bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+212,"IfStatement","null",true,"xml guess enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+213,"IfStatement","null",true,"xml enc utf_32 bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+214,"MethodDeclaration","null",true,"utf_32be utf_32 xml guess enc bom enc utf_16be utf_8 utf_32le xml enc utf_16 utf_16le ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+215,"IfStatement","null",false,"text xml app xml ","boolean ","","","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+216,"IfStatement","null",true,"bom enc ","java.lang.String ","NULL ","","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+217,"IfStatement","null",false,"utf_16 c t enc ","java.lang.String boolean ","","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+218,"IfStatement","null",true,"bom enc ","java.lang.String ","NULL ","","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+219,"IfStatement","null",false,"utf_32 c t enc ","java.lang.String boolean ","","equals ","IOException ","org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException org.apache.commons.io.input.XmlStreamReaderException ",org.apache.commons.io.input.XmlStreamReaderException
+220,"IfStatement","null",false,"","int ","","","IOException ","java.io.IOException ",java.io.IOException
+221,"IfStatement","null",false,"first g t ","int ","","","IOException ","java.io.IOException ",java.io.IOException
+222,"IfStatement","null",true,"max bytes per char buffer size ","int float ","","","","",java.lang.IllegalArgumentException
+223,"IfStatement","null",true,"","byte ","NULL ","","IOException ","java.lang.IndexOutOfBoundsException ",java.lang.NullPointerException
+224,"IfStatement","null",false,"cbuf mark_cbuf ","int java.nio.CharBuffer ","","position ","IOException ","",java.lang.IllegalStateException
+225,"IfStatement","null",true,"","byte ","NULL ","","IOException ","java.lang.IndexOutOfBoundsException ",java.lang.NullPointerException
+226,"IfStatement","null",true,"length p buffer buffer size ","int byte ","","","IOException ","",java.lang.IllegalArgumentException
+227,"IfStatement","null",true,"length p buffer buffer size ","int byte ","","","IOException ","",java.lang.IllegalArgumentException
+228,"IfStatement","null",false,"current number of bytes ","int ","","","","",java.lang.IllegalStateException
+229,"IfStatement","null",true,"p offset length p buffer ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+230,"IfStatement","null",true,"buffer p length length ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+231,"IfStatement","null",true,"p length p offset length p buffer ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+232,"IfStatement","null",true,"p length current number of bytes ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalStateException
+233,"IfStatement","null",false,"buffer length current number of bytes ","int byte ","","","","",java.lang.IllegalStateException
+234,"IfStatement","null",true,"p offset length p buffer ","int byte ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+235,"IfStatement","null",true,"buffer p length length ","int byte ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+236,"IfStatement","null",true,"p offset length p buffer ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+237,"IfStatement","null",true,"p length ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+238,"IfStatement","null",true,"buffer p length length current number of bytes ","int byte ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalStateException
+239,"IfStatement","null",true,"p buffer size ","int ","","","","",java.lang.IllegalArgumentException
+240,"IfStatement","null",true,"p offset ","int ","","","IOException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+241,"IfStatement","null",true,"p length ","int ","","","IOException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+242,"IfStatement","null",true,"file ","java.io.File ","NULL ","","","",java.lang.IllegalArgumentException
+243,"IfStatement","null",false,"running ","boolean ","","","Exception ","",java.lang.IllegalStateException
+244,"IfStatement","null",false,"running ","boolean ","","","Exception ","",java.lang.IllegalStateException
+245,"IfStatement","null",true,"root entry ","org.apache.commons.io.monitor.FileEntry ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+246,"IfStatement","null",true,"root entry ","org.apache.commons.io.monitor.FileEntry java.io.File ","NULL ","getFile ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+247,"IfStatement","null",true,"chunk size ","int ","","","","",java.lang.IllegalArgumentException
+248,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+249,"IfStatement","null",false,"coder result ","java.nio.charset.CoderResult boolean ","","isUnderflow ","IOException ","",java.io.IOException
+250,"CatchClause","java.lang.IllegalArgumentException",false,"len cb2 bb2 charset decoder2 ","int java.nio.ByteBuffer java.nio.CharBuffer java.nio.charset.CharsetDecoder java.nio.charset.CoderResult ","","decode ","","java.lang.UnsupportedOperationException ",java.lang.UnsupportedOperationException
+251,"IfStatement","null",false,"cb2 test_string_2 ","java.lang.String java.nio.CharBuffer boolean ","","equals toString ","","java.lang.UnsupportedOperationException ",java.lang.UnsupportedOperationException
+252,"IfStatement","null",true,"size ","int ","","","","",java.lang.IllegalArgumentException
+253,"IfStatement","null",true,"chunk size ","int ","","","","",java.lang.IllegalArgumentException
+254,"IfStatement","null",true,"file ","java.io.File ","NULL ","","IOException ","java.lang.NullPointerException java.lang.Exception ",java.lang.NullPointerException
+255,"IfStatement","null",true,"encoding ","java.lang.Object ","NULL ","","IOException ","java.lang.NullPointerException java.lang.Exception ",java.lang.NullPointerException
+256,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+257,"IfStatement","null",true,"file ","java.io.File boolean ","","isDirectory ","IOException ","",java.io.IOException
+258,"IfStatement","null",true,"lock dir ","java.io.File boolean ","","exists ","IOException ","java.io.IOException ",java.io.IOException
+259,"IfStatement","null",true,"lock dir ","java.io.File boolean ","","canWrite ","IOException ","java.io.IOException ",java.io.IOException
+260,"IfStatement","null",false,"lock file ","java.io.File boolean ","","createNewFile ","IOException ","",java.io.IOException
+261,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+262,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+263,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+264,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+265,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+266,"IfStatement","null",true,"initial buffer size ","int ","","","","",java.lang.IllegalArgumentException
+267,"IfStatement","null",true,"prefix ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+268,"IfStatement","null",true,"prefix ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+269,"IfStatement","null",true,"initial buffer size ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+270,"CatchClause","java.io.IOException",false,"fos memory output stream ","org.apache.commons.io.output.ByteArrayOutputStream java.io.FileOutputStream void ","","writeTo ","IOException ","",java.io.IOException
+271,"IfStatement","null",false,"closed ","boolean ","","","IOException ","",java.io.IOException
+272,"IfStatement","null",true,"pattern ","java.util.regex.Pattern ","NULL ","","","",java.lang.IllegalArgumentException
+273,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+274,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+275,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+276,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+277,"IfStatement","null",false,"non empty file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+278,"IfStatement","null",false,"old file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+279,"IfStatement","null",false,"reference ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+280,"IfStatement","null",false,"new file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+281,"IfStatement","null",false,"large file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+282,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+283,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+284,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+285,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+286,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+287,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+288,"IfStatement","null",false,"the file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+289,"IfStatement","null",false,"some file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+290,"IfStatement","null",false,"the file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+291,"IfStatement","null",false,"some file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+292,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+293,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+294,"IfStatement","null",false,"test source file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+295,"IfStatement","null",false,"test dest file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+296,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+297,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+298,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+299,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+300,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+301,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+302,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+303,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+304,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+305,"IfStatement","null",false,"sub file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+306,"IfStatement","null",false,"sub file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+307,"IfStatement","null",false,"sub file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+308,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+309,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+310,"IfStatement","null",false,"test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+311,"IfStatement","null",false,"test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+312,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+313,"IfStatement","null",false,"test file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+314,"IfStatement","null",false,"the instance ","org.apache.commons.io.FileCleaningTracker int ","","getTrackCount ","Exception ","",java.lang.IllegalStateException
+315,"IfStatement","null",false,"m_test file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+316,"IfStatement","null",false,"m_test file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+317,"IfStatement","null",false,"m_test file1 ","java.io.File boolean ","","exists ","","",java.lang.IllegalStateException
+318,"IfStatement","null",false,"imaginary file ","java.io.File boolean ","","exists ","","",java.lang.IllegalStateException
+319,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+320,"IfStatement","null",false,"m_test file ","java.io.File boolean ","","getParentFile exists ","","java.lang.RuntimeException ",java.io.IOException
+321,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+322,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+323,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+324,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+325,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+326,"IfStatement","null",false,"smaller file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+327,"IfStatement","null",false,"equal file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+328,"IfStatement","null",false,"larger file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+329,"IfStatement","null",false,"less file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+330,"IfStatement","null",false,"equal file1 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+331,"IfStatement","null",false,"equal file2 ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+332,"IfStatement","null",false,"more file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException java.io.IOException ",java.io.IOException
+333,"IfStatement","null",false,"older file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+334,"IfStatement","null",false,"equal file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+335,"IfStatement","null",false,"newer file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+336,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+337,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+338,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+339,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+340,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+341,"IfStatement","null",false,"file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+342,"IfStatement","null",false,"old file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+343,"IfStatement","null",false,"reference ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+344,"IfStatement","null",false,"new file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException java.io.IOException ",java.io.IOException
+345,"IfStatement","null",false,"small file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+346,"IfStatement","null",false,"large file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+347,"IfStatement","null",false,"read only file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+348,"IfStatement","null",false,"read only file ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+349,"IfStatement","null",false,"empty file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+350,"IfStatement","null",false,"not empty file ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+351,"IfStatement","null",false,"file a ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+352,"IfStatement","null",false,"file b ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+353,"IfStatement","null",false,"file a ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+354,"IfStatement","null",false,"file b ","java.io.File boolean ","","getParentFile exists ","Exception ","java.io.IOException ",java.io.IOException
+355,"IfStatement","null",false,"random file b ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+356,"IfStatement","null",false,"random file b ","java.io.File boolean ","","getParentFile exists ","Exception ","",java.io.IOException
+357,"IfStatement","null",true,"file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+358,"IfStatement","null",false,"res ","int ","","","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+359,"IfStatement","null",false,"res input buffer offset ","int byte ","","","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+360,"IfStatement","null",false,"res ","int ","","","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+361,"IfStatement","null",false,"res ","int ","","","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+362,"IfStatement","null",false,"read buffer input buffer offset ","int byte ","","","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+363,"SwitchStatement","null",false,"rnd ","java.util.Random int ","","nextInt ","Exception ","java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalStateException
+364,"IfStatement","null",true,"lenient ","boolean ","","","IOException XmlStreamReaderException ","",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+365,"IfStatement","null",true,"lenient ","boolean ","","","IOException XmlStreamReaderException ","",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+366,"IfStatement","null",true,"utf_8 xml guess enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+367,"IfStatement","null",true,"utf_8 xml enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+368,"IfStatement","null",true,"xml guess enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+369,"IfStatement","null",true,"xml enc utf_16 bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+370,"IfStatement","null",true,"xml guess enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+371,"IfStatement","null",true,"xml enc utf_32 bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+372,"IfStatement","null",true,"utf_32le utf_32be bom enc ","java.lang.String boolean ","","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+373,"IfStatement","null",true,"utf_16le utf_16be c t enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+374,"IfStatement","null",true,"utf_16 bom enc ","java.lang.String boolean ","NULL ","startsWith ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+375,"IfStatement","null",true,"utf_32le utf_32be c t enc bom enc ","java.lang.String boolean ","NULL ","equals ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+376,"IfStatement","null",true,"utf_32 bom enc ","java.lang.String boolean ","NULL ","startsWith ","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+377,"IfStatement","null",false,"text xml app xml ","boolean ","","","IOException ","org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException org.apache.commons.io.input.compatibility.XmlStreamReaderException ",org.apache.commons.io.input.compatibility.XmlStreamReaderException
+378,"IfStatement","null",false,"","int ","","","IOException ","java.io.IOException ",java.io.IOException
+379,"IfStatement","null",false,"","int ","","","IOException ","java.io.IOException ",java.io.IOException
+380,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+381,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+382,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+383,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+384,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+385,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+386,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+387,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+388,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+389,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.UnsupportedEncodingException
+390,"IfStatement","null",true,"data length count ","int byte ","","","","",java.lang.IllegalArgumentException
+391,"MethodDeclaration","null",false,"","","","","IOException ","",java.io.IOException
+392,"IfStatement","null",true,"file ","java.io.File boolean ","","getParentFile exists ","IOException ","",java.io.IOException
+393,"IfStatement","null",true,"file ","java.io.File boolean ","NULL ","getParentFile exists ","IOException ","",java.io.IOException

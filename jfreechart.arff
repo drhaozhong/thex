@@ -1,0 +1,479 @@
+@relation "jfreechart"
+
+@attribute iid numeric
+@attribute enclosureType string
+@attribute catchedType string
+@attribute isFromArgument {true, false}
+@attribute varNames string
+@attribute varTypes string
+@attribute constants string
+@attribute methodNames string
+@attribute methodExceptions string
+@attribute otherExceptions string
+@attribute classid{java.lang.IllegalArgumentException,java.lang.RuntimeException,java.lang.IllegalStateException,java.lang.NullPointerException,org.jfree.data.UnknownKeyException,org.jfree.data.general.SeriesException,org.jfree.data.time.TimePeriodFormatException}
+
+@data
+0,"IfStatement","null",false,"plot ","org.jfree.chart.plot.Plot org.jfree.chart.plot.PolarPlot ","","","","",java.lang.IllegalArgumentException
+1,"IfStatement","null",true,"index ","int ","","getSubtitleCount ","","",java.lang.IllegalArgumentException
+2,"IfStatement","null",true,"index ","int ","","getSubtitleCount ","","",java.lang.IllegalArgumentException
+3,"IfStatement","null",false,"position left ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.RuntimeException
+4,"IfStatement","null",true,"directory ","java.io.File boolean ","","isDirectory ","","",java.lang.IllegalArgumentException
+5,"CatchClause","java.io.IOException",false,"writer ","java.io.BufferedWriter void ","NULL ","close ","IOException ","",java.lang.RuntimeException
+6,"IfStatement","null",false,"","java.awt.Graphics2D ","NULL ","","","",java.lang.IllegalStateException
+7,"IfStatement","null",false,"","boolean org.jfree.chart.ChartUtils ","","isOrsonPDFAvailable ","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.IllegalStateException
+8,"CatchClause","java.lang.ClassNotFoundException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+9,"CatchClause","java.lang.InstantiationException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+10,"CatchClause","java.lang.IllegalAccessException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+11,"CatchClause","java.lang.NoSuchMethodException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+12,"CatchClause","java.lang.SecurityException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+13,"CatchClause","java.lang.IllegalArgumentException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+14,"CatchClause","java.lang.reflect.InvocationTargetException",true,"file pdf doc class key_suppress_shadow_generation chart page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D java.lang.Class java.awt.Graphics2D int java.io.File org.jfree.chart.JFreeChart void java.awt.RenderingHints.Key java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw setRenderingHint getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+15,"SwitchStatement","null",false,"","int ","","intKey ","","",java.lang.RuntimeException
+16,"CatchClause","java.lang.CloneNotSupportedException",false,"result ","org.jfree.chart.plot.DrawingSupplier org.jfree.chart.util.PublicCloneable java.lang.Object ","","clone ","","",java.lang.RuntimeException
+17,"IfStatement","null",true,"polygon length ","int double ","","","","",java.lang.IllegalArgumentException
+18,"MethodDeclaration","null",true,"high_end location middle low_end ","org.jfree.chart.axis.AxisLabelLocation boolean ","","equals ","","",java.lang.RuntimeException
+19,"MethodDeclaration","null",true,"high_end location middle low_end ","org.jfree.chart.axis.AxisLabelLocation boolean ","","equals ","","",java.lang.RuntimeException
+20,"MethodDeclaration","null",true,"high_end location middle low_end ","org.jfree.chart.axis.AxisLabelLocation boolean ","","equals ","","",java.lang.RuntimeException
+21,"MethodDeclaration","null",true,"high_end location middle low_end ","org.jfree.chart.axis.AxisLabelLocation boolean ","","equals ","","",java.lang.RuntimeException
+22,"IfStatement","null",true,"right edge ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.IllegalStateException
+23,"IfStatement","null",true,"right edge ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.IllegalStateException
+24,"IfStatement","null",true,"multiple ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+25,"IfStatement","null",true,"roll multiple ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+26,"IfStatement","null",true,"millisecond unit ","org.jfree.chart.axis.DateTickUnitType boolean ","","equals ","","",java.lang.IllegalArgumentException
+27,"IfStatement","null",true,"base ","double ","1.0 ","","","",java.lang.IllegalArgumentException
+28,"IfStatement","null",true,"value ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+29,"IfStatement","null",false,"lower strict values flag allow negatives flag ","boolean double ","0.0 ","","","",java.lang.RuntimeException
+30,"IfStatement","null",true,"lower upper ","java.util.Date long ","","getTime ","","",java.lang.IllegalArgumentException
+31,"IfStatement","null",true,"lower upper ","double ","","","","",java.lang.IllegalArgumentException
+32,"IfStatement","null",true,"length directions ","int java.lang.String ","","","","",java.lang.IllegalArgumentException
+33,"IfStatement","null",true,"size ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+34,"IfStatement","null",true,"range ","org.jfree.data.Range double ","0.0 ","getLength ","","",java.lang.IllegalArgumentException
+35,"IfStatement","null",true,"size ","double java.lang.Double boolean ","","isInfinite ","","",java.lang.IllegalArgumentException
+36,"MethodDeclaration","null",false,"factor power ","int ","300 ","","","",java.lang.IllegalStateException
+37,"MethodDeclaration","null",false,"factor power integers ","int boolean ","300 ","","","",java.lang.IllegalStateException
+38,"IfStatement","null",true,"unit ","org.jfree.chart.axis.TickUnit ","NULL ","","","",java.lang.NullPointerException
+39,"IfStatement","null",true,"location bottom_or_right ","org.jfree.chart.axis.AxisLocation ","","","","",java.lang.IllegalStateException
+40,"IfStatement","null",true,"category category count ","int ","","","","",java.lang.IllegalArgumentException
+41,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+42,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+43,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+44,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+45,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+46,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException ",java.lang.RuntimeException
+47,"MethodDeclaration","null",false,"range fixed none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException ",java.lang.RuntimeException
+48,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+49,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+50,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+51,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+52,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.IllegalArgumentException ",java.lang.RuntimeException
+53,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.IllegalArgumentException ",java.lang.RuntimeException
+54,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.IllegalArgumentException ",java.lang.RuntimeException
+55,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.IllegalArgumentException ",java.lang.RuntimeException
+56,"MethodDeclaration","null",false,"range fixed none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.IllegalArgumentException
+57,"MethodDeclaration","null",false,"range fixed none ","org.jfree.chart.block.LengthConstraintType ","","","","",java.lang.RuntimeException
+58,"SwitchStatement","null",true,"code ","int ","","","","",java.lang.IllegalArgumentException
+59,"IfStatement","null",true,"month ","int boolean ","","isValidMonthCode ","","",java.lang.IllegalArgumentException
+60,"IfStatement","null",false,"maximum_year_supported minimum_year_supported ","int ","","","","",java.lang.IllegalArgumentException
+61,"IfStatement","null",false,"target y maximum_year_supported minimum_year_supported ","int ","","","","",java.lang.IllegalArgumentException
+62,"IfStatement","null",true,"target weekday ","int boolean org.jfree.chart.date.SerialDate ","","isValidWeekdayCode ","","",java.lang.IllegalArgumentException
+63,"IfStatement","null",true,"target weekday ","int boolean org.jfree.chart.date.SerialDate ","","isValidWeekdayCode ","","",java.lang.IllegalArgumentException
+64,"IfStatement","null",true,"target d o w ","int boolean org.jfree.chart.date.SerialDate ","","isValidWeekdayCode ","","",java.lang.IllegalArgumentException
+65,"IfStatement","null",true,"year ","int ","1900 9999 ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+66,"IfStatement","null",true,"december january month ","int org.jfree.chart.date.MonthConstants ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+67,"IfStatement","null",true,"day year month ","int org.jfree.chart.date.SerialDate ","","lastDayOfMonth ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+68,"IfStatement","null",true,"serial_upper_bound serial serial_lower_bound ","int ","","","","",java.lang.IllegalArgumentException
+69,"IfStatement","null",true,"quality ","float ","1.0f 0.0f ","","","",java.lang.IllegalArgumentException
+70,"IfStatement","null",false,"class name ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+71,"CatchClause","java.lang.Exception",false,"class name image encoder class image encoder ","java.lang.Class org.jfree.chart.encoders.ImageEncoder java.lang.String java.lang.Object java.lang.Class ","","newInstance forName ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+72,"IfStatement","null",true,"label template ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+73,"IfStatement","null",true,"number format ","java.text.NumberFormat ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+74,"IfStatement","null",true,"date formatter ","java.text.DateFormat ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+75,"IfStatement","null",true,"number formatter ","java.text.NumberFormat ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+76,"IfStatement","null",true,"location ","int ","","","","",java.lang.IllegalArgumentException
+77,"IfStatement","null",true,"location ","int ","","","","",java.lang.IllegalArgumentException
+78,"IfStatement","null",true,"weight ","int ","","","","",java.lang.IllegalArgumentException
+79,"IfStatement","null",true,"percent max_interior_gap ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+80,"IfStatement","null",true,"location index ","int org.jfree.chart.axis.AxisLocation ","NULL ","","","",java.lang.IllegalArgumentException
+81,"IfStatement","null",true,"location index ","int org.jfree.chart.axis.AxisLocation ","NULL ","","","",java.lang.IllegalArgumentException
+82,"IfStatement","null",false,"count ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+83,"IfStatement","null",false,"item ","java.lang.Object java.lang.Integer ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+84,"IfStatement","null",false,"item set ","java.lang.Object java.util.HashSet boolean ","","contains ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+85,"IfStatement","null",false,"parent ","org.jfree.chart.plot.Plot org.jfree.chart.event.RendererChangeListener ","","","","",java.lang.RuntimeException
+86,"IfStatement","null",true,"alpha ","float ","1.0f 0.0f ","","","",java.lang.IllegalArgumentException
+87,"IfStatement","null",true,"alpha ","float ","1.0f 0.0f ","","","",java.lang.IllegalArgumentException
+88,"IfStatement","null",true,"location index ","int org.jfree.chart.axis.AxisLocation ","NULL ","","","",java.lang.IllegalArgumentException
+89,"IfStatement","null",true,"location index ","int org.jfree.chart.axis.AxisLocation ","NULL ","","","",java.lang.IllegalArgumentException
+90,"IfStatement","null",false,"count ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+91,"IfStatement","null",false,"item set ","java.lang.Integer java.util.Set boolean ","","contains ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+92,"IfStatement","null",true,"index ","int ","","","","",java.lang.IllegalArgumentException
+93,"IfStatement","null",true,"index ","int ","","","","",java.lang.IllegalArgumentException
+94,"IfStatement","null",true,"weight ","int ","","","","",java.lang.IllegalArgumentException
+95,"IfStatement","null",true,"index ","int ","","","","",java.lang.IllegalArgumentException
+96,"IfStatement","null",false,"count ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+97,"IfStatement","null",false,"item ","java.lang.Object java.lang.Integer ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+98,"IfStatement","null",false,"item set ","java.lang.Object java.util.HashSet boolean ","","contains ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+99,"IfStatement","null",true,"pie chart ","org.jfree.chart.JFreeChart org.jfree.chart.plot.PiePlot org.jfree.chart.plot.Plot ","","getPlot ","","",java.lang.IllegalArgumentException
+100,"IfStatement","null",true,"angle ","int ","360 ","","","",java.lang.IllegalArgumentException
+101,"IfStatement","null",true,"range ","org.jfree.data.Range double ","0.0 ","getLength ","","",java.lang.IllegalArgumentException
+102,"IfStatement","null",true,"size ","double ","","","","",java.lang.IllegalArgumentException
+103,"IfStatement","null",false,"shape circle ","org.jfree.chart.plot.DialShape ","","","","",java.lang.IllegalStateException
+104,"IfStatement","null",true,"percent max_interior_gap ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+105,"IfStatement","null",false,"anticlockwise direction ","org.jfree.chart.util.Rotation ","","","","",java.lang.IllegalStateException
+106,"IfStatement","null",false,"anticlockwise direction ","org.jfree.chart.util.Rotation ","","","","",java.lang.IllegalStateException
+107,"IfStatement","null",true,"weight ","int ","","","","",java.lang.IllegalArgumentException
+108,"IfStatement","null",true,"weight ","int ","","","","",java.lang.IllegalArgumentException
+109,"IfStatement","null",false,"anticlockwise direction ","org.jfree.chart.util.Rotation ","","","","",java.lang.IllegalStateException
+110,"IfStatement","null",true,"value_labels type no_labels ","int ","","","","",java.lang.IllegalArgumentException
+111,"SwitchStatement","null",true,"type ","int ","","","","",java.lang.IllegalArgumentException
+112,"IfStatement","null",true,"alpha ","float ","1.0f 0.0f ","","","",java.lang.IllegalArgumentException
+113,"IfStatement","null",false,"result ","org.jfree.chart.ui.RectangleEdge ","NULL ","","","",java.lang.IllegalStateException
+114,"IfStatement","null",false,"result ","org.jfree.chart.ui.RectangleEdge ","NULL ","","","",java.lang.IllegalStateException
+115,"IfStatement","null",true,"radius ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+116,"IfStatement","null",true,"major tick increment ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+117,"IfStatement","null",true,"radius ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+118,"IfStatement","null",true,"increment ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+119,"IfStatement","null",true,"length ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+120,"IfStatement","null",true,"count ","int ","","","","",java.lang.IllegalArgumentException
+121,"IfStatement","null",true,"length ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+122,"IfStatement","null",true,"radius ","double ","","","","",java.lang.IllegalArgumentException
+123,"IfStatement","null",true,"bound upper bound ","double ","","","","",java.lang.IllegalArgumentException
+124,"IfStatement","null",true,"bound lower bound ","double ","","","","",java.lang.IllegalArgumentException
+125,"IfStatement","null",true,"lower upper ","double ","","","","",java.lang.IllegalArgumentException
+126,"IfStatement","null",false,"scale ","org.jfree.chart.plot.dial.DialScale ","NULL ","","","",java.lang.RuntimeException
+127,"IfStatement","null",true,"radius ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+128,"IfStatement","null",true,"min x max x ","double ","","","","",java.lang.IllegalArgumentException
+129,"IfStatement","null",true,"radius ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+130,"IfStatement","null",true,"radius ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+131,"IfStatement","null",true,"upper bound lower bound ","double ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+132,"IfStatement","null",true,"alpha ","int ","255 ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+133,"IfStatement","null",true,"upper bound lower bound ","double ","","","","",java.lang.IllegalArgumentException
+134,"IfStatement","null",true,"x high x low ","double ","","","","",java.lang.IllegalArgumentException
+135,"IfStatement","null",true,"x high x low ","double ","","","","",java.lang.IllegalArgumentException
+136,"IfStatement","null",true,"margin ","double ","1.0 0.0 ","","","",java.lang.IllegalArgumentException
+137,"IfStatement","null",true,"width ","double ","","","","",java.lang.IllegalArgumentException
+138,"IfStatement","null",true,"dataset ","org.jfree.data.category.CategoryDataset org.jfree.data.statistics.BoxAndWhiskerCategoryDataset ","","","","",java.lang.IllegalArgumentException
+139,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+140,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+141,"IfStatement","null",true,"margin ","double ","1.0 0.0 ","","","",java.lang.IllegalArgumentException
+142,"IfStatement","null",true,"data ","org.jfree.data.category.CategoryDataset org.jfree.data.statistics.StatisticalCategoryDataset ","","","","",java.lang.IllegalArgumentException
+143,"IfStatement","null",true,"min ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+144,"IfStatement","null",true,"scale type ","int ","","","","",java.lang.IllegalArgumentException
+145,"IfStatement","null",false,"orientation horizontal ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+146,"IfStatement","null",true,"step point ","double ","1.0d 0.0d ","","","",java.lang.IllegalArgumentException
+147,"IfStatement","null",true,"step point ","double ","1.0d 0.0d ","","","",java.lang.IllegalArgumentException
+148,"IfStatement","null",true,"precision ","int ","","","","",java.lang.IllegalArgumentException
+149,"IfStatement","null",true,"","int ","","","","",java.lang.IllegalArgumentException
+150,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+151,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+152,"IfStatement","null",true,"alpha ","float ","1.0f 0.0f ","","","",java.lang.IllegalArgumentException
+153,"IfStatement","null",true,"","int ","","","","",java.lang.IllegalArgumentException
+154,"IfStatement","null",true,"","int ","","","","",java.lang.IllegalArgumentException
+155,"IfStatement","null",true,"dataset ","org.jfree.data.xy.XYDataset org.jfree.data.xy.TableXYDataset org.jfree.data.xy.IntervalXYDataset ","","","","java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+156,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalStateException
+157,"IfStatement","null",true,"layer background ","org.jfree.chart.ui.Layer boolean ","","equals ","","",java.lang.RuntimeException
+158,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+159,"IfStatement","null",false,"orientation vertical ","org.jfree.chart.plot.PlotOrientation ","","","","",java.lang.IllegalStateException
+160,"IfStatement","null",true,"layer background ","org.jfree.chart.ui.Layer boolean ","","equals ","","",java.lang.RuntimeException
+161,"IfStatement","null",true,"width ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+162,"IfStatement","null",true,"height ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+163,"IfStatement","null",true,"alignment ","org.jfree.chart.ui.HorizontalAlignment ","NULL ","","","",java.lang.IllegalArgumentException
+164,"IfStatement","null",true,"text ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+165,"IfStatement","null",true,"font ","java.awt.Font ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+166,"IfStatement","null",true,"paint ","java.awt.Paint ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+167,"IfStatement","null",true,"text ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+168,"IfStatement","null",true,"font ","java.awt.Font ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+169,"IfStatement","null",true,"paint ","java.awt.Paint ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+170,"IfStatement","null",true,"text ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+171,"IfStatement","null",true,"text ","java.lang.String ","NULL ","","","java.lang.NullPointerException java.lang.NullPointerException ",java.lang.NullPointerException
+172,"IfStatement","null",true,"font ","java.awt.Font ","NULL ","","","java.lang.NullPointerException java.lang.NullPointerException ",java.lang.NullPointerException
+173,"IfStatement","null",true,"paint ","java.awt.Paint ","NULL ","","","java.lang.NullPointerException java.lang.NullPointerException ",java.lang.NullPointerException
+174,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+175,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+176,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+177,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+178,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+179,"IfStatement","null",false,"position left right ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.RuntimeException
+180,"IfStatement","null",false,"position left right ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.RuntimeException
+181,"IfStatement","null",true,"count ","int ","","","","",java.lang.IllegalArgumentException
+182,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+183,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+184,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+185,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+186,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+187,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+188,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+189,"IfStatement","null",false,"position left right ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.RuntimeException
+190,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+191,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+192,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+193,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+194,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+195,"IfStatement","null",false,"none ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+196,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+197,"IfStatement","null",true,"image ","java.awt.Image ","NULL ","","","",java.lang.NullPointerException
+198,"IfStatement","null",true,"image ","java.awt.Image ","NULL ","","","",java.lang.NullPointerException
+199,"IfStatement","null",false,"position left right ","org.jfree.chart.ui.RectangleEdge ","","","","",java.lang.RuntimeException
+200,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+201,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+202,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+203,"IfStatement","null",false,"range ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+204,"IfStatement","null",false,"fixed ","org.jfree.chart.block.LengthConstraintType ","","","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+205,"IfStatement","null",true,"type ","org.jfree.chart.ui.GradientPaintTransformType ","NULL ","","","",java.lang.IllegalArgumentException
+206,"IfStatement","null",true,"unit type ","org.jfree.chart.util.UnitType ","NULL ","","","",java.lang.IllegalArgumentException
+207,"IfStatement","null",true,"base ","java.awt.geom.Rectangle2D ","NULL ","","","",java.lang.IllegalArgumentException
+208,"IfStatement","null",true,"base ","java.awt.geom.Rectangle2D ","NULL ","","","",java.lang.IllegalArgumentException
+209,"IfStatement","null",true,"base ","java.awt.geom.Rectangle2D ","NULL ","","","",java.lang.IllegalArgumentException
+210,"IfStatement","null",true,"font ","java.awt.Font ","NULL ","","","",java.lang.NullPointerException
+211,"CatchClause","java.io.UnsupportedEncodingException",false,"series key result series parameter name ","java.lang.String java.lang.Comparable java.net.URLEncoder ","UTF-8 ","encode toString ","","java.lang.RuntimeException ",java.lang.RuntimeException
+212,"CatchClause","java.io.UnsupportedEncodingException",false,"result x value item parameter name ","java.lang.String java.net.URLEncoder ","UTF-8 ","encode ","","java.lang.RuntimeException ",java.lang.RuntimeException
+213,"CatchClause","java.io.UnsupportedEncodingException",true,"url key index param name category param name pie index ","java.lang.String java.lang.Comparable java.net.URLEncoder int boolean ","UTF-8 &amp; NULL ","encode toString contains ","","",java.lang.RuntimeException
+214,"CatchClause","java.io.UnsupportedEncodingException",false,"series key category key url category parameter name series parameter name ","java.lang.String java.lang.Comparable java.net.URLEncoder ","UTF-8 &amp; ","encode toString ","","",java.lang.RuntimeException
+215,"IfStatement","null",true,"object ","java.lang.Object ","NULL ","","CloneNotSupportedException ","java.lang.CloneNotSupportedException java.lang.CloneNotSupportedException java.lang.CloneNotSupportedException java.lang.CloneNotSupportedException ",java.lang.IllegalArgumentException
+216,"IfStatement","null",true,"collection ","java.util.Collection ","NULL ","","CloneNotSupportedException ","",java.lang.IllegalArgumentException
+217,"IfStatement","null",false,"","boolean org.jfree.chart.util.ExportUtils ","","isJFreeSVGAvailable ","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.IllegalStateException
+218,"CatchClause","java.lang.ClassNotFoundException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+219,"CatchClause","java.lang.InstantiationException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+220,"CatchClause","java.lang.IllegalAccessException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+221,"CatchClause","java.lang.NoSuchMethodException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+222,"CatchClause","java.lang.SecurityException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+223,"CatchClause","java.lang.IllegalArgumentException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+224,"CatchClause","java.lang.reflect.InvocationTargetException",true,"file drawable element svg2 svg utils class draw area svg2 class ","java.lang.reflect.Method java.lang.Class java.awt.Graphics2D int java.lang.String java.awt.geom.Rectangle2D java.lang.Class java.lang.reflect.Constructor java.io.File java.lang.Class java.lang.Object ","NULL org.jfree.graphics2d.svg.SVGUtils writeToSVG getSVGElement org.jfree.graphics2d.svg.SVGGraphics2D ","invoke forName getMethod draw newInstance getConstructor ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+225,"IfStatement","null",false,"","boolean org.jfree.chart.util.ExportUtils ","","isOrsonPDFAvailable ","","java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.IllegalStateException
+226,"CatchClause","java.lang.ClassNotFoundException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+227,"CatchClause","java.lang.InstantiationException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+228,"CatchClause","java.lang.IllegalAccessException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+229,"CatchClause","java.lang.NoSuchMethodException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+230,"CatchClause","java.lang.SecurityException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+231,"CatchClause","java.lang.IllegalArgumentException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+232,"CatchClause","java.lang.reflect.InvocationTargetException",true,"file drawable pdf doc class page draw area rect ","java.lang.reflect.Method java.lang.Object java.awt.geom.Rectangle2D int java.lang.Class java.awt.Graphics2D java.lang.Class java.io.File org.jfree.chart.ui.Drawable java.lang.Class java.lang.Class ","writeToFile com.orsonpdf.PDFDocument getGraphics2D createPage ","invoke getMethod draw getClass newInstance forName ","","java.lang.IllegalStateException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+233,"IfStatement","null",true,"shape ","java.awt.Shape ","NULL ","","","",java.lang.IllegalArgumentException
+234,"IfStatement","null",true,"shape ","java.awt.Shape ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+235,"IfStatement","null",true,"anchor ","org.jfree.chart.ui.RectangleAnchor ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+236,"IfStatement","null",true,"index ","int ","","","","",java.lang.IllegalArgumentException
+237,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ClassNotFoundException ","",java.lang.IllegalArgumentException
+238,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+239,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ClassNotFoundException ","",java.lang.IllegalArgumentException
+240,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+241,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ClassNotFoundException ","",java.lang.IllegalArgumentException
+242,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+243,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ClassNotFoundException ","java.lang.RuntimeException ",java.lang.IllegalArgumentException
+244,"SwitchStatement","null",false,"type ","int ","","","IOException ClassNotFoundException ","java.lang.IllegalArgumentException ",java.lang.RuntimeException
+245,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+246,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+247,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+248,"IfStatement","null",true,"stream ","java.io.ObjectInputStream ","NULL ","","IOException ClassNotFoundException ","",java.lang.IllegalArgumentException
+249,"IfStatement","null",true,"stream ","java.io.ObjectOutputStream ","NULL ","","IOException ","",java.lang.IllegalArgumentException
+250,"CatchClause","java.lang.CloneNotSupportedException",false,"result obj ","java.lang.Object java.util.List boolean org.jfree.chart.util.ObjectUtils ","","add clone ","","",java.lang.RuntimeException
+251,"CatchClause","java.lang.CloneNotSupportedException",false,"result key value ","java.lang.Object java.util.Map org.jfree.chart.util.ObjectUtils ","","clone put ","","",java.lang.RuntimeException
+252,"IfStatement","null",true,"param ","java.lang.Object ","NULL ","","","",java.lang.IllegalArgumentException
+253,"IfStatement","null",true,"value ","int ","","","","",java.lang.IllegalArgumentException
+254,"IfStatement","null",true,"value lower bound ","int ","","","","",java.lang.IllegalArgumentException
+255,"IfStatement","null",false,"descending order ","org.jfree.chart.util.SortOrder boolean ","","equals ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+256,"IfStatement","null",false,"descending order ","org.jfree.chart.util.SortOrder boolean ","","equals ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+257,"IfStatement","null",false,"type by_value ","org.jfree.data.KeyedValueComparatorType ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+258,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+259,"IfStatement","null",true,"position ","int ","","getItemCount ","","",java.lang.IllegalArgumentException
+260,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+261,"IfStatement","null",true,"column keys column key ","java.util.List java.lang.Comparable boolean ","","contains ","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+262,"IfStatement","null",false,"row ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+263,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+264,"IfStatement","null",true,"column keys column key ","java.util.List java.lang.Comparable boolean ","","contains ","","",org.jfree.data.UnknownKeyException
+265,"IfStatement","null",true,"lower upper ","double ","","","","",java.lang.IllegalArgumentException
+266,"IfStatement","null",true,"factor ","double ","","","","",java.lang.IllegalArgumentException
+267,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+268,"IfStatement","null",true,"position data ","int java.util.List ","","size ","","",java.lang.IllegalArgumentException
+269,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+270,"IfStatement","null",false,"row ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+271,"IfStatement","null",false,"column ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+272,"IfStatement","null",false,"row index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+273,"IfStatement","null",false,"column index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+274,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+275,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.UnknownKeyException
+276,"IfStatement","null",false,"allow duplicate x values ","boolean ","","","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+277,"IfStatement","null",false,"index ","int ","","","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+278,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.general.SeriesException
+279,"IfStatement","null",true,"ends series count length ","int java.lang.Number ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+280,"IfStatement","null",true,"series keys series count length ","int java.lang.Comparable ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+281,"IfStatement","null",true,"ends length category count ","int java.lang.Number ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+282,"IfStatement","null",true,"length category count category keys ","int java.lang.Comparable ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+283,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+284,"IfStatement","null",true,"series keys length ","int java.lang.Comparable ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+285,"IfStatement","null",true,"length category keys ","int java.lang.Comparable ","","getCategoryCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+286,"IfStatement","null",true,"category keys ","int java.lang.Comparable ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+287,"IfStatement","null",false,"series index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+288,"IfStatement","null",false,"item index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+289,"IfStatement","null",false,"series index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+290,"IfStatement","null",false,"item index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+291,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+292,"IfStatement","null",true,"category ","int ","","getCategoryCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+293,"IfStatement","null",false,"series index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+294,"IfStatement","null",false,"item index ","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+295,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+296,"IfStatement","null",true,"category ","int ","","getCategoryCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+297,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+298,"IfStatement","null",false,"category index ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+299,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+300,"IfStatement","null",false,"category index ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+301,"IfStatement","null",true,"row ","int ","","getRowCount ","","",java.lang.IllegalArgumentException
+302,"IfStatement","null",true,"underlying first ","int org.jfree.data.category.CategoryDataset ","","getColumnCount ","","",java.lang.IllegalArgumentException
+303,"IfStatement","null",true,"max ","int ","","","","",java.lang.IllegalArgumentException
+304,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+305,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+306,"IfStatement","null",true,"std ","double ","","","","",java.lang.IllegalArgumentException
+307,"IfStatement","null",true,"underlying first ","int org.jfree.data.gantt.GanttCategoryDataset ","","getColumnCount ","","",java.lang.IllegalArgumentException
+308,"IfStatement","null",true,"max ","int ","","","","",java.lang.IllegalArgumentException
+309,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+310,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+311,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+312,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+313,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+314,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+315,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+316,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+317,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+318,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+319,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+320,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+321,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+322,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+323,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+324,"IfStatement","null",false,"","int ","","","","org.jfree.data.UnknownKeyException ",org.jfree.data.UnknownKeyException
+325,"IfStatement","null",true,"key ","java.lang.Comparable ","NULL ","","","",java.lang.NullPointerException
+326,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+327,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+328,"IfStatement","null",true,"","double ","0.0 ","","","",java.lang.IllegalArgumentException
+329,"CatchClause","java.beans.PropertyVetoException",true,"old property change support key vetoable change support ","java.lang.Comparable java.beans.VetoableChangeSupport void java.beans.PropertyChangeSupport ","Key ","firePropertyChange fireVetoableChange ","","",java.lang.IllegalArgumentException
+330,"IfStatement","null",true,"x samples ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+331,"IfStatement","null",true,"y samples ","int ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+332,"IfStatement","null",true,"min x ","double java.lang.Double boolean ","","isNaN isInfinite ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+333,"IfStatement","null",true,"max x ","double java.lang.Double boolean ","","isNaN isInfinite ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+334,"IfStatement","null",true,"min y ","double java.lang.Double boolean ","","isNaN isInfinite ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+335,"IfStatement","null",true,"max y ","double java.lang.Double boolean ","","isNaN isInfinite ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+336,"IfStatement","null",false,"data ","org.jfree.data.KeyedValue ","NULL ","","","",java.lang.RuntimeException
+337,"IfStatement","null",true,"row keys ","java.lang.Comparable boolean org.jfree.chart.util.ArrayUtils ","","hasDuplicateItems ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+338,"IfStatement","null",true,"column keys ","java.lang.Comparable boolean org.jfree.chart.util.ArrayUtils ","","hasDuplicateItems ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+339,"IfStatement","null",true,"length row keys data ","int double java.lang.Comparable ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+340,"IfStatement","null",true,"column keys length column count ","int java.lang.Comparable ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+341,"IfStatement","null",true,"end start ","double ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+342,"IfStatement","null",true,"samples ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+343,"IfStatement","null",true,"connection ","java.sql.Connection ","NULL ","","","",java.lang.NullPointerException
+344,"IfStatement","null",true,"con ","java.sql.Connection ","NULL ","","","",java.lang.NullPointerException
+345,"CatchClause","java.io.IOException",true,"data ","java.io.StringWriter org.jfree.data.KeyedValues void ","","writeKeyedValues ","","",java.lang.RuntimeException
+346,"CatchClause","java.io.IOException",true,"data ","java.io.StringWriter org.jfree.data.KeyedValues2D void ","","writeKeyedValues2D ","","",java.lang.RuntimeException
+347,"IfStatement","null",true,"existing bin bin ","org.jfree.data.statistics.SimpleHistogramBin boolean ","","overlapsWith ","","",java.lang.RuntimeException
+348,"IfStatement","null",false,"placed ","boolean ","","","","",java.lang.RuntimeException
+349,"IfStatement","null",true,"length data ","java.lang.Number int ","","","","",java.lang.IllegalArgumentException
+350,"IfStatement","null",true,"y data length x data ","java.lang.Number int ","","","","",java.lang.IllegalArgumentException
+351,"IfStatement","null",true,"y data length x data ","java.lang.Number int ","","","","",java.lang.IllegalArgumentException
+352,"IfStatement","null",true,"data1 length data2 ","java.lang.Number int ","","","","",java.lang.IllegalArgumentException
+353,"IfStatement","null",true,"y data length x data ","java.lang.Number int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+354,"IfStatement","null",true,"length x data period ","int java.lang.Number ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+355,"IfStatement","null",false,"","int ","","","","",java.lang.IllegalArgumentException
+356,"IfStatement","null",false,"","int ","","","","",java.lang.IllegalArgumentException
+357,"IfStatement","null",false,"","int ","","","","",java.lang.IllegalArgumentException
+358,"IfStatement","null",false,"","int ","","","","",java.lang.IllegalArgumentException
+359,"IfStatement","null",true,"order item count ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+360,"IfStatement","null",true,"order valid items ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+361,"IfStatement","null",true,"bins ","int ","","","","",java.lang.IllegalArgumentException
+362,"IfStatement","null",true,"values length ","double int ","NULL ","","","",java.lang.IllegalArgumentException
+363,"IfStatement","null",true,"values length ","double int ","NULL ","","","",java.lang.IllegalArgumentException
+364,"IfStatement","null",false,"scale_area_to_1 type ","org.jfree.data.statistics.HistogramType ","","","","",java.lang.IllegalStateException
+365,"IfStatement","null",true,"farout coefficient ","double ","","getOutlierCoefficient ","","",java.lang.IllegalArgumentException
+366,"IfStatement","null",true,"start boundary end boundary ","double ","","","","",java.lang.IllegalArgumentException
+367,"IfStatement","null",true,"upper bound lower bound ","double ","","","","",java.lang.IllegalArgumentException
+368,"IfStatement","null",true,"period count ","int ","","","","",java.lang.IllegalArgumentException
+369,"IfStatement","null",true,"period count ","int ","","","","",java.lang.IllegalArgumentException
+370,"IfStatement","null",true,"point count ","int ","","","","",java.lang.IllegalArgumentException
+371,"IfStatement","null",true,"min_value period ","double java.lang.Double ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+372,"IfStatement","null",true,"skip ","double ","0.0 ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+373,"IfStatement","null",true,"maximum ","int ","","","","",java.lang.IllegalArgumentException
+374,"IfStatement","null",true,"periods ","long ","","","","",java.lang.IllegalArgumentException
+375,"IfStatement","null",false,"time period class ","java.lang.Class boolean ","","equals ","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+376,"IfStatement","null",false,"index ","int ","","","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+377,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.general.SeriesException
+378,"IfStatement","null",false,"period class time period class ","java.lang.Class boolean ","","equals ","","",org.jfree.data.general.SeriesException
+379,"CatchClause","java.lang.NoSuchMethodException",true,"latest index newest time period class ","org.jfree.data.time.RegularTimePeriod java.lang.Class java.lang.reflect.Method long java.util.Locale java.util.TimeZone java.lang.Object java.util.Date ","createInstance ","getDefault invoke getSerialIndex getDeclaredMethod ","","java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+380,"CatchClause","java.lang.IllegalAccessException",true,"latest index newest time period class ","org.jfree.data.time.RegularTimePeriod java.lang.Class java.lang.reflect.Method long java.util.Locale java.util.TimeZone java.lang.Object java.util.Date ","createInstance ","getDefault invoke getSerialIndex getDeclaredMethod ","","java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+381,"CatchClause","java.lang.reflect.InvocationTargetException",true,"latest index newest time period class ","org.jfree.data.time.RegularTimePeriod java.lang.Class java.lang.reflect.Method long java.util.Locale java.util.TimeZone java.lang.Object java.util.Date ","createInstance ","getDefault invoke getSerialIndex getDeclaredMethod ","","java.lang.RuntimeException java.lang.RuntimeException ",java.lang.RuntimeException
+382,"IfStatement","null",true,"end start ","int ","","","","",java.lang.IllegalArgumentException
+383,"IfStatement","null",true,"start ","int ","","","CloneNotSupportedException ","java.lang.IllegalArgumentException java.lang.RuntimeException ",java.lang.IllegalArgumentException
+384,"IfStatement","null",true,"end start ","int ","","","CloneNotSupportedException ","java.lang.IllegalArgumentException java.lang.RuntimeException ",java.lang.IllegalArgumentException
+385,"CatchClause","org.jfree.data.general.SeriesException",false,"clone copy ","org.jfree.data.time.TimeSeriesDataItem org.jfree.data.time.TimeSeries void ","","add ","CloneNotSupportedException ","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.RuntimeException
+386,"IfStatement","null",true,"end start ","org.jfree.data.time.RegularTimePeriod int ","","compareTo ","CloneNotSupportedException ","",java.lang.IllegalArgumentException
+387,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+388,"IfStatement","null",false,"x position end ","org.jfree.data.time.TimePeriodAnchor ","","","","",java.lang.IllegalStateException
+389,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+390,"IfStatement","null",false,"","org.jfree.data.general.Series int java.lang.Comparable ","","getSeriesIndex getKey ","PropertyVetoException ","java.beans.PropertyVetoException ",java.lang.IllegalStateException
+391,"IfStatement","null",true,"minimum_year year maximum_year ","int org.jfree.data.time.Year ","","","","",java.lang.IllegalArgumentException
+392,"CatchClause","java.lang.NumberFormatException",true,"","java.lang.String int java.lang.Integer ","","trim parseInt ","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+393,"CatchClause","java.lang.IllegalArgumentException",false,"","int org.jfree.data.time.Year ","","","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+394,"IfStatement","null",true,"week first_week_in_year last_week_in_year ","int ","","","","",java.lang.IllegalArgumentException
+395,"IfStatement","null",true,"week first_week_in_year last_week_in_year ","int ","","","","",java.lang.IllegalArgumentException
+396,"IfStatement","null",false,"","int ","","","","org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+397,"IfStatement","null",false,"","int ","","","","org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+398,"IfStatement","null",false,"","org.jfree.data.time.Year ","NULL ","","","org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+399,"IfStatement","null",false,"","int ","","","","org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+400,"IfStatement","null",true,"values ","float ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+401,"IfStatement","null",true,"series number value history length ","int org.jfree.data.time.DynamicTimeSeriesCollection.ValueSequence ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+402,"IfStatement","null",true,"series number value history length ","int org.jfree.data.time.DynamicTimeSeriesCollection.ValueSequence ","","","","",java.lang.IllegalArgumentException
+403,"IfStatement","null",false,"value history length n data points ","int org.jfree.data.time.DynamicTimeSeriesCollection.ValueSequence ","","","","",java.lang.IllegalArgumentException
+404,"IfStatement","null",false,"value history length n data points ","int org.jfree.data.time.DynamicTimeSeriesCollection.ValueSequence ","","","","",java.lang.IllegalArgumentException
+405,"IfStatement","null",true,"month ","int ","","","","",java.lang.IllegalArgumentException
+406,"IfStatement","null",true,"month ","int ","","","","",java.lang.IllegalArgumentException
+407,"IfStatement","null",false,"month ","int ","","","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+408,"IfStatement","null",false,"year ","org.jfree.data.time.Year ","NULL ","","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+409,"IfStatement","null",true,"anchor end ","org.jfree.data.time.TimePeriodAnchor boolean ","","equals ","","",java.lang.IllegalStateException
+410,"IfStatement","null",true,"quarter first_quarter last_quarter ","int ","","","","",java.lang.IllegalArgumentException
+411,"IfStatement","null",true,"quarter first_quarter last_quarter ","int ","","","","",java.lang.IllegalArgumentException
+412,"IfStatement","null",false,"","int ","","","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+413,"IfStatement","null",true,"","int java.lang.String ","","length ","","org.jfree.data.time.TimePeriodFormatException ",org.jfree.data.time.TimePeriodFormatException
+414,"IfStatement","null",true,"end start ","long ","","","","",java.lang.IllegalArgumentException
+415,"CatchClause","java.lang.CloneNotSupportedException",false,"clone ","java.lang.Object ","","","","",java.lang.RuntimeException
+416,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+417,"IfStatement","null",true,"item0 period ","org.jfree.data.time.RegularTimePeriod org.jfree.data.time.ohlc.OHLCItem java.lang.Class boolean ","","getClass equals getPeriod ","","",java.lang.IllegalArgumentException
+418,"IfStatement","null",true,"series ","org.jfree.data.xy.XYSeries boolean ","","getAllowDuplicateXValues ","","",java.lang.IllegalArgumentException
+419,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+420,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+421,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+422,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+423,"IfStatement","null",true,"series ","org.jfree.data.xy.XYSeries int java.lang.Comparable ","","getSeriesIndex getKey ","","",java.lang.IllegalArgumentException
+424,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+425,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+426,"MethodDeclaration","null",true,"series key ","java.lang.Comparable org.jfree.data.xy.XYSeries boolean ","","getKey equals ","","",org.jfree.data.UnknownKeyException
+427,"IfStatement","null",true,"width ","double ","0.0 ","","","",java.lang.IllegalArgumentException
+428,"IfStatement","null",false,"","org.jfree.data.general.Series int java.lang.Comparable ","","getSeriesIndex getKey ","PropertyVetoException ","java.beans.PropertyVetoException ",java.lang.IllegalStateException
+429,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+430,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+431,"IfStatement","null",true,"series key ","java.lang.Comparable ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+432,"IfStatement","null",true,"data ","double ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+433,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+434,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+435,"IfStatement","null",true,"series index ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+436,"IfStatement","null",true,"series index ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+437,"IfStatement","null",false,"allow duplicate x values ","boolean ","","","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+438,"IfStatement","null",false,"index ","int ","","","","org.jfree.data.general.SeriesException ",org.jfree.data.general.SeriesException
+439,"IfStatement","null",false,"index ","int ","","","","",org.jfree.data.general.SeriesException
+440,"CatchClause","org.jfree.data.general.SeriesException",false,"clone copy ","org.jfree.data.xy.XYSeries org.jfree.data.xy.XYDataItem void ","","add ","CloneNotSupportedException ","",java.lang.RuntimeException
+441,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+442,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+443,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+444,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+445,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+446,"IfStatement","null",true,"obj ","java.lang.Object org.jfree.data.xy.XYCoordinate ","","","","",java.lang.IllegalArgumentException
+447,"IfStatement","null",true,"","double ","1.0 0.0 ","","","",java.lang.IllegalArgumentException
+448,"IfStatement","null",true,"","double ","0.0 ","","","",java.lang.IllegalArgumentException
+449,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+450,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+451,"IfStatement","null",true,"series key ","java.lang.Comparable ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+452,"IfStatement","null",true,"data ","double ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+453,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+454,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+455,"IfStatement","null",true,"series keys length data ","int java.util.List java.lang.Object ","","size ","","",java.lang.IllegalArgumentException
+456,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+457,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+458,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+459,"IfStatement","null",true,"series ","int ","","getSeriesCount ","","",java.lang.IllegalArgumentException
+460,"IfStatement","null",true,"series key ","java.lang.Comparable ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+461,"IfStatement","null",true,"data ","double ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+462,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+463,"IfStatement","null",true,"length data ","int double ","","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException

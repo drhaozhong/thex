@@ -1,0 +1,311 @@
+@relation "shiro"
+
+@attribute iid numeric
+@attribute enclosureType string
+@attribute catchedType string
+@attribute isFromArgument {true, false}
+@attribute varNames string
+@attribute varTypes string
+@attribute constants string
+@attribute methodNames string
+@attribute methodExceptions string
+@attribute otherExceptions string
+@attribute classid{java.lang.IllegalStateException,java.lang.IllegalArgumentException,java.lang.NullPointerException,org.apache.shiro.config.ConfigurationException,org.apache.shiro.authc.AuthenticationException,org.apache.shiro.session.InvalidSessionException,org.apache.shiro.cache.CacheException}
+
+@data
+0,"IfStatement","null",false,"_is running ","boolean ","","","","",java.lang.IllegalStateException
+1,"CatchClause","org.apache.shiro.samples.aspectj.bank.NotEnoughFundsException",true,"an amount an account id log ","org.apache.shiro.samples.aspectj.bank.Account org.apache.shiro.samples.aspectj.bank.AccountTransaction long void double org.slf4j.Logger java.lang.String ","New balance of account  Created a new transaction   after deposit is  ","debug getBalance applyTransaction getId getCurrentUsername setCreatedBy safellyRetrieveAccountForId createDepositTx ","AccountNotFoundException InactiveAccountException ","",java.lang.IllegalStateException
+2,"CatchClause","org.apache.shiro.samples.aspectj.bank.NotEnoughFundsException",false,"log ","org.apache.shiro.samples.aspectj.bank.AccountTransaction org.apache.shiro.samples.aspectj.bank.Account void org.slf4j.Logger double long java.lang.String ","Account  Created a new transaction   is now closed and an amount of   is given to the owner ","getAmount debug getId setCreatedBy setActive getCurrentUsername applyTransaction getBalance createWithdrawalTx ","AccountNotFoundException InactiveAccountException ","org.apache.shiro.samples.aspectj.bank.InactiveAccountException ",java.lang.IllegalStateException
+3,"IfStatement","null",false,"subject ","org.apache.shiro.subject.Subject java.lang.Object boolean ","NULL ","isAuthenticated getPrincipal ","","",java.lang.IllegalStateException
+4,"IfStatement","null",true,"a transaction withdrawal ","org.apache.shiro.samples.aspectj.bank.AccountTransaction.TransactionType org.apache.shiro.samples.aspectj.bank.AccountTransaction ","","getType ","NotEnoughFundsException InactiveAccountException ","org.apache.shiro.samples.aspectj.bank.InactiveAccountException org.apache.shiro.samples.aspectj.bank.NotEnoughFundsException ",java.lang.IllegalArgumentException
+5,"IfStatement","null",true,"name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","IllegalArgumentException CacheException ","",java.lang.IllegalArgumentException
+6,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+7,"IfStatement","null",true,"backing map ","java.util.Map ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+8,"IfStatement","null",true,"streaming mode name ","java.lang.String boolean ","","isModeStreamingCompatible ","","",java.lang.IllegalArgumentException
+9,"IfStatement","null",false,"streaming mode name ","java.lang.String boolean ","","isModeInitializationVectorCompatible ","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+10,"IfStatement","null",false,"mode name ","java.lang.String boolean ","","isModeInitializationVectorCompatible ","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+11,"IfStatement","null",true,"algorithm name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+12,"IfStatement","null",true,"bits_per_byte initialization vector size ","int ","","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+13,"IfStatement","null",false,"size ","int ","","","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+14,"IfStatement","null",false,"size bits_per_byte ","int ","","","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+15,"IfStatement","null",false,"iv bytes length ","byte int ","NULL ","","","",java.lang.IllegalStateException
+16,"IfStatement","null",true,"key length ","byte int ","NULL ","","IllegalArgumentException CryptoException ","",java.lang.IllegalArgumentException
+17,"IfStatement","null",false,"length ","byte int ","NULL ","","CryptoException ","",java.lang.IllegalStateException
+18,"IfStatement","null",true,"","java.io.InputStream ","NULL ","","CryptoException ","java.lang.NullPointerException org.apache.shiro.crypto.CryptoException ",java.lang.NullPointerException
+19,"IfStatement","null",true,"out ","java.io.OutputStream ","NULL ","","CryptoException ","java.lang.NullPointerException org.apache.shiro.crypto.CryptoException ",java.lang.NullPointerException
+20,"CatchClause","java.security.NoSuchAlgorithmException",false,"","javax.crypto.KeyGenerator java.lang.String ","","getAlgorithmName getInstance ","","",java.lang.IllegalStateException
+21,"IfStatement","null",true,"defaults ","org.apache.shiro.config.Ini ","NULL ","","","",java.lang.NullPointerException
+22,"IfStatement","null",true,"resource path ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasLength ","ConfigurationException ","",java.lang.IllegalArgumentException
+23,"CatchClause","java.io.IOException",true,"resource path ","java.io.InputStream java.lang.String org.apache.shiro.io.ResourceUtils ","","getInputStreamForPath ","ConfigurationException ","",org.apache.shiro.config.ConfigurationException
+24,"IfStatement","null",true,"","java.io.InputStream ","NULL ","","ConfigurationException ","org.apache.shiro.config.ConfigurationException ",java.lang.NullPointerException
+25,"CatchClause","java.io.UnsupportedEncodingException",true,"isr default_charset_name ","java.io.InputStreamReader java.lang.String java.io.InputStream ","","","ConfigurationException ","java.lang.NullPointerException ",org.apache.shiro.config.ConfigurationException
+26,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+27,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+28,"IfStatement","null",false,"key value ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+29,"IfStatement","null",true,"","org.apache.shiro.aop.MethodInvocation ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+30,"IfStatement","null",false,"","java.lang.reflect.Method ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+31,"IfStatement","null",true,"annotation class ","java.lang.Class java.lang.Class ","NULL ","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+32,"IfStatement","null",true,"handler ","org.apache.shiro.aop.AnnotationHandler ","NULL ","","","",java.lang.IllegalArgumentException
+33,"IfStatement","null",true,"token ","org.apache.shiro.authc.AuthenticationToken ","NULL ","","AuthenticationException ","org.apache.shiro.authc.AuthenticationException org.apache.shiro.authc.AuthenticationException ",java.lang.IllegalArgumentException
+34,"IfStatement","null",false,"info ","org.apache.shiro.authc.AuthenticationInfo ","NULL ","","AuthenticationException ","java.lang.IllegalArgumentException org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+35,"CatchClause","java.lang.Throwable",true,"token info msg ","java.lang.String org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken org.apache.shiro.authc.AuthenticationException ","No account information found for authentication token  Authenticator instance.  Please check that it is configured correctly. ] by this  NULL ","doAuthenticate ","AuthenticationException ","java.lang.IllegalArgumentException org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+36,"MethodDeclaration","null",true,"service ","org.apache.shiro.authc.credential.PasswordService org.apache.shiro.authc.credential.HashingPasswordService ","","","","",java.lang.IllegalStateException
+37,"IfStatement","null",false,"service ","org.apache.shiro.authc.credential.PasswordService ","NULL ","","","",java.lang.IllegalStateException
+38,"MethodDeclaration","null",true,"credentials ","java.lang.Object java.lang.String org.apache.shiro.crypto.hash.Hash ","","","","",java.lang.IllegalArgumentException
+39,"IfStatement","null",true,"hash algorithm name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+40,"IfStatement","null",false,"hash algorithm name ","java.lang.String ","NULL ","","IllegalStateException ","",java.lang.IllegalStateException
+41,"IfStatement","null",true,"aggregate ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.subject.PrincipalCollection boolean ","NULL ","getPrincipals isEmpty ","AuthenticationException ","",org.apache.shiro.authc.AuthenticationException
+42,"IfStatement","null",false,"realms ","java.util.Collection boolean org.apache.shiro.util.CollectionUtils ","","isEmpty ","IllegalStateException ","",java.lang.IllegalStateException
+43,"IfStatement","null",true,"","java.lang.Throwable org.apache.shiro.authc.AuthenticationException ","","","AuthenticationException ","org.apache.shiro.authc.AuthenticationException org.apache.shiro.authc.UnknownAccountException ",org.apache.shiro.authc.AuthenticationException
+44,"IfStatement","null",true,"","java.lang.Throwable org.apache.shiro.authc.AuthenticationException ","","","AuthenticationException ","org.apache.shiro.authc.AuthenticationException org.apache.shiro.authc.UnknownAccountException ",org.apache.shiro.authc.AuthenticationException
+45,"IfStatement","null",true,"aggregate ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.MergableAuthenticationInfo ","","","","",java.lang.IllegalArgumentException
+46,"IfStatement","null",false,"realms ","java.util.Collection boolean ","NULL ","isEmpty ","IllegalStateException ","",java.lang.IllegalStateException
+47,"IfStatement","null",true,"domain ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+48,"IfStatement","null",true,"wildcard string ","java.lang.String boolean ","NULL ","isEmpty ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+49,"IfStatement","null",false,"subparts ","java.util.Set boolean ","","isEmpty ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+50,"IfStatement","null",false,"parts ","java.util.List boolean ","","isEmpty ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+51,"IfStatement","null",true,"target executor ","java.util.concurrent.Executor ","NULL ","","","",java.lang.NullPointerException
+52,"IfStatement","null",true,"target executor ","java.util.concurrent.Executor java.util.concurrent.ExecutorService ","","","","",java.lang.IllegalArgumentException
+53,"IfStatement","null",true,"target executor ","java.util.concurrent.Executor java.util.concurrent.ScheduledExecutorService ","","","","",java.lang.IllegalArgumentException
+54,"IfStatement","null",true,"target executor service ","java.util.concurrent.ExecutorService java.util.concurrent.ScheduledExecutorService ","","","","",java.lang.IllegalArgumentException
+55,"IfStatement","null",false,"instance ","","NULL ","","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+56,"IfStatement","null",false,"instance ","","NULL ","","","java.lang.IllegalStateException ",java.lang.IllegalStateException
+57,"IfStatement","null",true,"ini ","org.apache.shiro.config.Ini boolean org.apache.shiro.util.CollectionUtils ","","isEmpty ","","org.apache.shiro.config.ConfigurationException ",java.lang.NullPointerException
+58,"IfStatement","null",false,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","","java.lang.NullPointerException ",org.apache.shiro.config.ConfigurationException
+59,"IfStatement","null",true,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","","org.apache.shiro.config.ConfigurationException ",java.lang.NullPointerException
+60,"IfStatement","null",true,"security manager ","org.apache.shiro.mgt.SecurityManager org.apache.shiro.mgt.RealmSecurityManager ","","","","java.lang.NullPointerException ",org.apache.shiro.config.ConfigurationException
+61,"IfStatement","null",true,"seed ","java.util.Map java.util.Map ","NULL ","","","",java.lang.IllegalArgumentException
+62,"IfStatement","null",false,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","IllegalStateException ","",java.lang.IllegalStateException
+63,"IfStatement","null",true,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","","",java.lang.IllegalArgumentException
+64,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","RequiredTypeException ","java.lang.NullPointerException org.apache.shiro.env.RequiredTypeException ",java.lang.NullPointerException
+65,"IfStatement","null",true,"required type ","java.lang.Class ","NULL ","","RequiredTypeException ","java.lang.NullPointerException org.apache.shiro.env.RequiredTypeException ",java.lang.NullPointerException
+66,"IfStatement","null",true,"name ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+67,"IfStatement","null",true,"jndi name ","java.lang.String ","NULL ","","NamingException ","javax.naming.NamingException ",java.lang.IllegalArgumentException
+68,"CatchClause","javax.naming.NamingException",false,"resource name required type ","java.lang.String java.lang.Class java.lang.Class java.lang.Object ","NULL ","lookup cast ","","",java.lang.IllegalStateException
+69,"CatchClause","org.apache.shiro.authc.AuthenticationException",true,"token info ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken ","","authenticate ","AuthenticationException ","",org.apache.shiro.authc.AuthenticationException
+70,"IfStatement","null",true,"subject ","org.apache.shiro.subject.Subject ","NULL ","","","",java.lang.IllegalArgumentException
+71,"IfStatement","null",true,"authenticator ","org.apache.shiro.authc.Authenticator ","NULL ","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+72,"CatchClause","java.lang.Exception",true,"subject field current principals ","java.lang.reflect.Field org.apache.shiro.subject.PrincipalCollection org.apache.shiro.subject.Subject java.lang.Object void org.apache.shiro.subject.support.DelegatingSubject ","principals ","setAccessible getDeclaredField get ","","",java.lang.IllegalStateException
+73,"IfStatement","null",true,"realm ","org.apache.shiro.realm.Realm ","NULL ","","","",java.lang.IllegalArgumentException
+74,"IfStatement","null",true,"realms ","java.util.Collection ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+75,"IfStatement","null",true,"realms ","java.util.Collection boolean ","","isEmpty ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+76,"IfStatement","null",true,"authorizer ","org.apache.shiro.authz.Authorizer ","NULL ","","","",java.lang.IllegalArgumentException
+77,"IfStatement","null",false,"","org.apache.shiro.authc.credential.CredentialsMatcher ","NULL ","","AuthenticationException ","org.apache.shiro.authc.IncorrectCredentialsException ",org.apache.shiro.authc.AuthenticationException
+78,"IfStatement","null",true,"permission resolver ","org.apache.shiro.authz.permission.PermissionResolver ","NULL ","","","",java.lang.IllegalArgumentException
+79,"SwitchStatement","null",false,"salt style ","org.apache.shiro.realm.jdbc.JdbcRealm.SaltStyle ","","","AuthenticationException ","org.apache.shiro.authc.AccountException org.apache.shiro.authc.UnknownAccountException org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.config.ConfigurationException
+80,"CatchClause","java.sql.SQLException",false,"data source salt is base64 encoded info conn username salt salt style query results crypt no_salt external ","java.lang.String org.apache.shiro.realm.jdbc.JdbcRealm.SaltStyle java.sql.Connection java.lang.String org.apache.shiro.authc.SimpleAuthenticationInfo org.apache.shiro.util.ByteSource org.apache.shiro.util.ByteSource.Util void javax.sql.DataSource boolean char ","NULL Not implemented yet No account found for user  ","getPasswordForUser bytes setCredentialsSalt getName getSaltForUser decode getConnection toCharArray ","AuthenticationException ","org.apache.shiro.authc.AccountException org.apache.shiro.config.ConfigurationException org.apache.shiro.authc.UnknownAccountException ",org.apache.shiro.authc.AuthenticationException
+81,"IfStatement","null",false,"found result ","boolean ","","","SQLException ","",org.apache.shiro.authc.AuthenticationException
+82,"IfStatement","null",false,"arg ","java.lang.String ","NULL ","","IllegalStateException ","",java.lang.IllegalStateException
+83,"IfStatement","null",false,"jndi names ","java.util.Collection boolean ","NULL ","isEmpty ","IllegalStateException ","java.lang.IllegalStateException ",java.lang.IllegalStateException
+84,"CatchClause","java.lang.Exception",false,"realm name realms ","org.apache.shiro.realm.Realm java.lang.String java.util.List java.lang.Object boolean ","","add lookup ","IllegalStateException ","java.lang.IllegalStateException ",java.lang.IllegalStateException
+85,"CatchClause","javax.naming.AuthenticationException",true,"token info ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken org.apache.shiro.realm.ldap.LdapContextFactory ","","ensureContextFactory queryForAuthenticationInfo ","AuthenticationException ","org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+86,"CatchClause","javax.naming.NamingException",true,"token info ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken org.apache.shiro.realm.ldap.LdapContextFactory ","","ensureContextFactory queryForAuthenticationInfo ","AuthenticationException ","org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+87,"IfStatement","null",false,"url ","java.lang.String ","NULL ","","NamingException ","",java.lang.IllegalStateException
+88,"IfStatement","null",true,"template ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","IllegalArgumentException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+89,"IfStatement","null",false,"index ","int ","","","IllegalArgumentException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+90,"IfStatement","null",true,"principal ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","IllegalArgumentException IllegalStateException ","",java.lang.IllegalArgumentException
+91,"CatchClause","javax.naming.AuthenticationException",true,"token info ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken org.apache.shiro.realm.ldap.LdapContextFactory ","","getContextFactory queryForAuthenticationInfo ","AuthenticationException ","org.apache.shiro.ldap.UnsupportedAuthenticationMechanismException org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+92,"CatchClause","javax.naming.NamingException",true,"token info ","org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.authc.AuthenticationToken org.apache.shiro.realm.ldap.LdapContextFactory ","","getContextFactory queryForAuthenticationInfo ","AuthenticationException ","org.apache.shiro.ldap.UnsupportedAuthenticationMechanismException org.apache.shiro.authc.AuthenticationException ",org.apache.shiro.authc.AuthenticationException
+93,"IfStatement","null",false,"url ","java.lang.String ","NULL ","","NamingException IllegalStateException ","",java.lang.IllegalStateException
+94,"IfStatement","null",false,"resource path ","java.lang.String int ","NULL ","length ","","",java.lang.IllegalStateException
+95,"IfStatement","null",false,"resource path ","java.lang.String int ","NULL ","length ","","",java.lang.IllegalStateException
+96,"IfStatement","null",false,"key ","java.lang.String boolean ","","isRolename ","","",java.lang.IllegalStateException
+97,"IfStatement","null",false,"ini ","org.apache.shiro.config.Ini boolean org.apache.shiro.util.CollectionUtils ","","isEmpty ","","",java.lang.IllegalStateException
+98,"CatchClause","java.text.ParseException",false,"","void ","","processRoleDefinitions processUserDefinitions ","","",org.apache.shiro.config.ConfigurationException
+99,"IfStatement","null",true,"target ","org.apache.shiro.session.Session ","NULL ","","","",java.lang.IllegalArgumentException
+100,"CatchClause","org.apache.shiro.session.InvalidSessionException",true,"session ","org.apache.shiro.session.Session void ","","doValidate ","InvalidSessionException ","org.apache.shiro.session.ExpiredSessionException ",org.apache.shiro.session.InvalidSessionException
+101,"IfStatement","null",true,"session ","org.apache.shiro.session.Session org.apache.shiro.session.mgt.ValidatingSession ","","","InvalidSessionException ","",java.lang.IllegalStateException
+102,"IfStatement","null",true,"session manager ","org.apache.shiro.session.mgt.NativeSessionManager ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+103,"IfStatement","null",true,"key ","org.apache.shiro.session.mgt.SessionKey ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+104,"IfStatement","null",true,"key ","org.apache.shiro.session.mgt.SessionKey java.io.Serializable ","NULL ","getSessionId ","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+105,"IfStatement","null",true,"key ","org.apache.shiro.session.mgt.SessionKey ","NULL ","","SessionException ","",java.lang.NullPointerException
+106,"IfStatement","null",false,"last access time ","java.util.Date ","NULL ","","","",java.lang.IllegalStateException
+107,"MethodDeclaration","null",false,"","","","","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+108,"IfStatement","null",false,"session id generator ","org.apache.shiro.session.mgt.eis.SessionIdGenerator ","NULL ","","","",java.lang.IllegalStateException
+109,"IfStatement","null",true,"session id ","java.io.Serializable ","NULL ","","","",java.lang.IllegalStateException
+110,"IfStatement","null",true,"","java.io.Serializable ","NULL ","","","",java.lang.NullPointerException
+111,"IfStatement","null",true,"session ","org.apache.shiro.session.Session ","NULL ","","","",java.lang.NullPointerException
+112,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","",java.lang.NullPointerException
+113,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+114,"IfStatement","null",true,"principal name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+115,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+116,"IfStatement","null",true,"principal name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+117,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+118,"IfStatement","null",true,"principal name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+119,"IfStatement","null",true,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","","java.lang.IllegalStateException ",java.lang.NullPointerException
+120,"IfStatement","null",false,"subject context ","org.apache.shiro.subject.SubjectContext ","NULL ","","","java.lang.NullPointerException ",java.lang.IllegalStateException
+121,"IfStatement","null",true,"attribute key ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+122,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+123,"IfStatement","null",true,"principal ","java.lang.Object ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+124,"IfStatement","null",true,"realm name ","java.lang.String ","NULL ","","","java.lang.NullPointerException java.lang.IllegalArgumentException ",java.lang.NullPointerException
+125,"IfStatement","null",true,"principals ","java.util.Collection ","NULL ","","","java.lang.NullPointerException java.lang.IllegalArgumentException ",java.lang.NullPointerException
+126,"IfStatement","null",true,"principals ","java.util.Collection boolean ","","isEmpty ","","java.lang.NullPointerException java.lang.NullPointerException ",java.lang.IllegalArgumentException
+127,"IfStatement","null",true,"thread state ","org.apache.shiro.util.ThreadState ","NULL ","","IllegalArgumentException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+128,"IfStatement","null",true,"delegate ","java.lang.Runnable ","NULL ","","IllegalArgumentException ","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+129,"IfStatement","null",true,"thread state ","org.apache.shiro.util.ThreadState ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+130,"IfStatement","null",true,"delegate ","java.util.concurrent.Callable ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+131,"IfStatement","null",true,"security manager ","org.apache.shiro.mgt.SecurityManager ","NULL ","","","",java.lang.IllegalArgumentException
+132,"IfStatement","null",true,"session ","org.apache.shiro.session.Session ","NULL ","","","",java.lang.IllegalArgumentException
+133,"IfStatement","null",false,"principals ","org.apache.shiro.subject.PrincipalCollection boolean ","NULL ","isEmpty ","AuthenticationException ","",java.lang.IllegalStateException
+134,"IfStatement","null",false,"","boolean ","","hasPrincipals ","","",java.lang.IllegalStateException
+135,"IfStatement","null",true,"principals ","org.apache.shiro.subject.PrincipalCollection boolean ","","isEmpty ","NullPointerException ","",java.lang.NullPointerException
+136,"IfStatement","null",true,"subject ","org.apache.shiro.subject.Subject ","NULL ","","","",java.lang.IllegalArgumentException
+137,"IfStatement","null",false,"instance ","","NULL ","","","",java.lang.IllegalStateException
+138,"IfStatement","null",true,"pattern ","java.lang.String ","NULL ","","","",java.lang.IllegalArgumentException
+139,"IfStatement","null",true,"type ","java.lang.Object java.lang.Class java.lang.Class boolean ","","getClass isAssignableFrom ","","",java.lang.IllegalArgumentException
+140,"IfStatement","null",true,"key ","java.lang.Object ","NULL ","","","",java.lang.IllegalArgumentException
+141,"MethodDeclaration","null",false,"","","","","AuthenticationException ","",org.apache.shiro.authc.AuthenticationException
+142,"MethodDeclaration","null",false,"","","","","AuthenticationException ","",java.lang.IllegalArgumentException
+143,"MethodDeclaration","null",false,"","","","","AuthenticationException ","",java.lang.IllegalArgumentException
+144,"CatchClause","java.lang.InterruptedException",true,"millis ","long void java.lang.Thread ","","sleep ","","",java.lang.IllegalStateException
+145,"CatchClause","java.lang.InterruptedException",true,"millis ","long void java.lang.Thread ","","sleep ","","",java.lang.IllegalStateException
+146,"IfStatement","null",true,"random ","java.security.SecureRandom ","NULL ","","NullPointerException ","",java.lang.NullPointerException
+147,"IfStatement","null",true,"default next bytes size ","int ","","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+148,"IfStatement","null",true,"num bytes ","int ","","","","",java.lang.IllegalArgumentException
+149,"IfStatement","null",true,"cache ","net.sf.ehcache.Ehcache ","NULL ","","","",java.lang.IllegalArgumentException
+150,"CatchClause","java.lang.Throwable",true,"cache element key log ","net.sf.ehcache.Element org.slf4j.Logger net.sf.ehcache.Ehcache void boolean java.lang.Object java.lang.String ","NULL Getting object from cache  ] is null. ] for key  Element for  ","isTraceEnabled trace getObjectValue get getName ","CacheException ","",org.apache.shiro.cache.CacheException
+151,"CatchClause","java.lang.Throwable",true,"cache element key previous value ","net.sf.ehcache.Element net.sf.ehcache.Ehcache void ","","get put ","CacheException ","",org.apache.shiro.cache.CacheException
+152,"CatchClause","java.lang.Throwable",true,"cache key previous ","net.sf.ehcache.Ehcache boolean ","","remove get ","CacheException ","",org.apache.shiro.cache.CacheException
+153,"CatchClause","java.lang.Throwable",false,"cache ","net.sf.ehcache.Ehcache void ","","removeAll ","CacheException ","",org.apache.shiro.cache.CacheException
+154,"CatchClause","java.lang.Throwable",false,"cache ","net.sf.ehcache.Ehcache int ","","getSize ","","",org.apache.shiro.cache.CacheException
+155,"CatchClause","java.lang.Throwable",false,"cache keys ","java.util.List java.util.Collections java.util.Set net.sf.ehcache.Ehcache java.util.List java.util.LinkedHashSet java.lang.SuppressWarnings boolean ","unchecked ","emptySet unmodifiableSet isEmpty getKeys ","","",org.apache.shiro.cache.CacheException
+156,"CatchClause","java.lang.Throwable",false,"values cache key keys value ","java.util.List java.util.List java.util.Collections net.sf.ehcache.Ehcache boolean java.util.List int java.lang.SuppressWarnings java.util.ArrayList ","unchecked NULL ","get size unmodifiableList add emptyList isEmpty getKeys ","","",org.apache.shiro.cache.CacheException
+157,"CatchClause","java.lang.Throwable",false,"cache ","net.sf.ehcache.Ehcache long ","","getMemoryStoreSize ","","",org.apache.shiro.cache.CacheException
+158,"CatchClause","java.lang.Throwable",false,"cache ","net.sf.ehcache.Ehcache int ","","getDiskStoreSize ","","",org.apache.shiro.cache.CacheException
+159,"CatchClause","java.io.IOException",false,"config file ","java.lang.String java.io.InputStream org.apache.shiro.io.ResourceUtils ","","getInputStreamForPath ","","",java.lang.IllegalStateException
+160,"CatchClause","net.sf.ehcache.CacheException",true,"cache name manager log ","org.slf4j.Logger net.sf.ehcache.Ehcache java.lang.String net.sf.ehcache.CacheManager void boolean org.apache.shiro.cache.ehcache.EhCache net.sf.ehcache.Cache ","Using existing EHCache named  Cache with name '{}' does not yet exist.  Creating now. Added EhCache named  NULL ","isInfoEnabled info getEhcache addCache ensureCacheManager getName getCache ","CacheException ","",org.apache.shiro.cache.CacheException
+161,"CatchClause","java.lang.Exception",false,"manager log cache manager implicitly created ","org.slf4j.Logger net.sf.ehcache.CacheManager boolean void java.io.InputStream ","NULL instantiated Ehcache CacheManager instance. implicit cacheManager created successfully. cacheManager property not set.  Constructing CacheManager instance...  ","debug isDebugEnabled getCacheManagerConfigFileInputStream isTraceEnabled trace ","","",org.apache.shiro.cache.CacheException
+162,"IfStatement","null",false,"modifiers ","int boolean java.lang.reflect.Modifier ","","isPublic ","","",java.lang.IllegalArgumentException
+163,"CatchClause","java.lang.Exception",true,"event method ","java.lang.Object java.lang.reflect.Method ","","invoke getTarget ","","",java.lang.IllegalStateException
+164,"IfStatement","null",false,"length param types ","int java.lang.Class ","","","","",java.lang.IllegalArgumentException
+165,"CatchClause","java.net.MalformedURLException",true,"security manager remember me manager cipher key bind ","org.apache.shiro.web.mgt.CookieRememberMeManager org.apache.shiro.web.mgt.DefaultWebSecurityManager java.lang.String void com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.config.Ini byte com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.codec.Base64 ","main securityManager.rememberMeManager.cipherKey ","setCipherKey getSectionProperty setRememberMeManager loadShiroIni decode toInstance ","","",org.apache.shiro.config.ConfigurationException
+166,"CatchClause","java.net.MalformedURLException",true,"security manager remember me manager cipher key bind ","org.apache.shiro.web.mgt.CookieRememberMeManager org.apache.shiro.web.mgt.DefaultWebSecurityManager java.lang.String void com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.config.Ini byte com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.codec.Base64 ","main securityManager.rememberMeManager.cipherKey ","setCipherKey getSectionProperty setRememberMeManager loadShiroIni decode toInstance ","","",org.apache.shiro.config.ConfigurationException
+167,"CatchClause","java.net.MalformedURLException",true,"security manager remember me manager cipher key bind ","org.apache.shiro.web.mgt.CookieRememberMeManager org.apache.shiro.web.mgt.DefaultWebSecurityManager java.lang.String void com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.config.Ini byte com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.codec.Base64 ","main securityManager.rememberMeManager.cipherKey ","setCipherKey getSectionProperty setRememberMeManager loadShiroIni decode toInstance ","","",org.apache.shiro.config.ConfigurationException
+168,"CatchClause","java.net.MalformedURLException",true,"security manager remember me manager cipher key bind ","org.apache.shiro.web.mgt.CookieRememberMeManager org.apache.shiro.web.mgt.DefaultWebSecurityManager java.lang.String void com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.config.Ini byte com.google.inject.binder.AnnotatedBindingBuilder org.apache.shiro.codec.Base64 ","main securityManager.rememberMeManager.cipherKey ","setCipherKey getSectionProperty setRememberMeManager loadShiroIni decode toInstance ","","",org.apache.shiro.config.ConfigurationException
+169,"IfStatement","null",true,"source ","org.apache.shiro.util.ByteSource ","NULL ","","","",java.lang.NullPointerException
+170,"IfStatement","null",true,"algorithm name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","CodecException UnknownAlgorithmException ","",java.lang.NullPointerException
+171,"IfStatement","null",true,"clazz ","java.lang.Class boolean org.apache.shiro.crypto.hash.format.HashFormat ","","isAssignableFrom isInterface ","","",java.lang.IllegalArgumentException
+172,"IfStatement","null",true,"mcf_prefix formatted ","java.lang.String boolean ","","startsWith ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+173,"CatchClause","java.lang.NumberFormatException",false,"iterations string iterations ","int java.lang.String java.lang.Integer ","","parseInt ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+174,"IfStatement","null",false,"generated salt size ","int ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+175,"IfStatement","null",false,"format ","org.apache.shiro.crypto.hash.format.HashFormat ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+176,"CatchClause","java.lang.NumberFormatException",false,"iter val ","java.lang.String int java.lang.Integer ","","parseInt ","","",java.lang.IllegalArgumentException
+177,"IfStatement","null",true,"salt bytes string generate salt ","java.lang.String boolean ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+178,"IfStatement","null",true,"generate salt ","boolean ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+179,"IfStatement","null",false,"console ","java.io.Console ","NULL ","","","java.lang.IllegalArgumentException java.lang.IllegalArgumentException ",java.lang.IllegalStateException
+180,"IfStatement","null",false,"length first ","char int ","NULL ","","","java.lang.IllegalStateException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+181,"IfStatement","null",false,"second first ","char boolean java.util.Arrays ","","equals ","","java.lang.IllegalStateException java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+182,"IfStatement","null",true,"num bytes ","int ","","","","",java.lang.IllegalArgumentException
+183,"CatchClause","java.io.IOException",true,"buf ","java.lang.Appendable char ","","append ","","",java.lang.IllegalStateException
+184,"IfStatement","null",false,"len ","int ","0x01 ","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+185,"IfStatement","null",false,"digit ","int ","","","IllegalArgumentException ","",java.lang.IllegalArgumentException
+186,"IfStatement","null",false,"encoded data length long max_value ","int long java.lang.Integer ","","","","",java.lang.IllegalArgumentException
+187,"IfStatement","null",true,"","java.lang.Object ","NULL ","","","",java.lang.IllegalArgumentException
+188,"IfStatement","null",true,"","java.lang.Object ","NULL ","","","",java.lang.IllegalArgumentException
+189,"IfStatement","null",true,"file ","java.io.File ","NULL ","","","org.apache.shiro.codec.CodecException ",java.lang.IllegalArgumentException
+190,"IfStatement","null",true,"","java.io.InputStream ","NULL ","","","org.apache.shiro.codec.CodecException ",java.lang.IllegalArgumentException
+191,"IfStatement","null",true,"","","NULL ","","SerializationException ","org.apache.shiro.io.SerializationException ",java.lang.IllegalArgumentException
+192,"IfStatement","null",true,"serialized ","byte ","NULL ","","SerializationException ","org.apache.shiro.io.SerializationException ",java.lang.IllegalArgumentException
+193,"IfStatement","null",true,"source ","java.lang.Object ","NULL ","","","",java.lang.IllegalArgumentException
+194,"IfStatement","null",true,"serialized ","byte ","NULL ","","","",java.lang.IllegalArgumentException
+195,"IfStatement","null",true,"clazz ","java.lang.Class ","NULL ","","","org.apache.shiro.util.InstantiationException ",java.lang.IllegalArgumentException
+196,"CatchClause","java.lang.NoSuchMethodException",true,"clazz arg types ","java.lang.Class java.lang.Class java.lang.reflect.Constructor ","","getConstructor ","","",java.lang.IllegalStateException
+197,"IfStatement","null",true,"source ","java.lang.Object boolean ","","isCompatible ","IllegalArgumentException ","java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+198,"IfStatement","null",true,"source ","java.lang.Object java.io.InputStream ","","","IllegalArgumentException ","java.lang.IllegalArgumentException ",java.lang.IllegalStateException
+199,"IfStatement","null",true,"required type ","java.lang.Class ","NULL ","","","",java.lang.NullPointerException
+200,"CatchClause","java.lang.Exception",true,"instance name value ","java.lang.Object java.lang.String org.apache.shiro.util.Nameable void org.apache.shiro.util.ClassUtils ","","newInstance setName ","","",org.apache.shiro.config.ConfigurationException
+201,"IfStatement","null",false,"index ","int ","","","","",java.lang.IllegalArgumentException
+202,"CatchClause","java.lang.Exception",true,"instance value property bean utils bean ","java.lang.String java.beans.PropertyDescriptor java.lang.Object org.apache.commons.beanutils.BeanUtilsBean org.apache.commons.beanutils.PropertyUtilsBean void ","NULL ","getPropertyUtils applyProperty getPropertyDescriptor ","","",org.apache.shiro.config.ConfigurationException
+203,"IfStatement","null",true,"property ","java.lang.String boolean ","class ","equals ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+204,"IfStatement","null",false,"instance ","java.lang.Object ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+205,"IfStatement","null",true,"clazz ","java.lang.Class ","NULL ","","","org.apache.shiro.config.ConfigurationException org.apache.shiro.config.ConfigurationException org.apache.shiro.config.ConfigurationException ",java.lang.NullPointerException
+206,"IfStatement","null",false,"descriptor ","java.beans.PropertyDescriptor ","NULL ","","","java.lang.NullPointerException org.apache.shiro.config.ConfigurationException org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+207,"CatchClause","org.apache.shiro.config.ConfigurationException",true,"property name clazz object property clazz descriptor msg bean utils bean ","java.lang.String java.beans.PropertyDescriptor java.lang.Class java.lang.Object org.apache.commons.beanutils.BeanUtilsBean java.lang.Class org.apache.commons.beanutils.PropertyUtilsBean org.apache.shiro.config.ConfigurationException java.lang.Class boolean ","' does not exist for object of  Property ' NULL type  ","getClass getPropertyUtils getPropertyType isAssignableFrom getPropertyDescriptor getName ","","java.lang.NullPointerException org.apache.shiro.config.ConfigurationException org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+208,"CatchClause","java.lang.Exception",true,"property name clazz object property clazz descriptor msg bean utils bean ","java.lang.String java.beans.PropertyDescriptor java.lang.Class java.lang.Object org.apache.commons.beanutils.BeanUtilsBean java.lang.Class org.apache.commons.beanutils.PropertyUtilsBean org.apache.shiro.config.ConfigurationException java.lang.Class boolean ","' does not exist for object of  Property ' NULL type  ","getClass getPropertyUtils getPropertyType isAssignableFrom getPropertyDescriptor getName ","","java.lang.NullPointerException org.apache.shiro.config.ConfigurationException org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+209,"IfStatement","null",false,"kv pair length ","java.lang.String int ","NULL ","","","",org.apache.shiro.config.ConfigurationException
+210,"IfStatement","null",false,"referenced value ","java.lang.Object ","NULL ","","","",org.apache.shiro.config.ConfigurationException
+211,"CatchClause","java.lang.Exception",true,"object log value property path bean utils bean ","java.lang.Object java.lang.String org.slf4j.Logger org.apache.commons.beanutils.BeanUtilsBean void java.lang.Class boolean ","Applying property  ","getClass isTraceEnabled getName trace setProperty ","","",org.apache.shiro.config.ConfigurationException
+212,"CatchClause","java.lang.Exception",true,"object property path bean utils bean ","java.lang.Object java.lang.String org.apache.commons.beanutils.BeanUtilsBean org.apache.commons.beanutils.PropertyUtilsBean ","","getProperty getPropertyUtils ","","",org.apache.shiro.config.ConfigurationException
+213,"CatchClause","java.lang.Exception",true,"index object value property path bean utils bean ","java.lang.Object java.lang.String org.apache.commons.beanutils.BeanUtilsBean int org.apache.commons.beanutils.PropertyUtilsBean void ","","getPropertyUtils setIndexedProperty ","","",org.apache.shiro.config.ConfigurationException
+214,"CatchClause","java.lang.Exception",true,"index object property path bean utils bean ","java.lang.Object java.lang.String org.apache.commons.beanutils.BeanUtilsBean int org.apache.commons.beanutils.PropertyUtilsBean ","","getIndexedProperty getPropertyUtils ","","",org.apache.shiro.config.ConfigurationException
+215,"CatchClause","java.sql.SQLException",false,"sa info password conn info data source username ","java.lang.String org.apache.shiro.authc.SimpleAuthenticationInfo java.sql.Connection javax.sql.DataSource org.apache.shiro.authc.AuthenticationInfo org.apache.shiro.util.ByteSource org.apache.shiro.util.ByteSource.Util org.apache.shiro.authc.UnknownAccountException void ","NULL No account found for user  ","bytes setCredentialsSalt getPasswordForUser getName getConnection ","AuthenticationException ","org.apache.shiro.authc.AccountException org.apache.shiro.authc.UnknownAccountException ",org.apache.shiro.authc.AuthenticationException
+216,"IfStatement","null",false,"found result ","boolean ","","","SQLException ","",org.apache.shiro.authc.AuthenticationException
+217,"IfStatement","null",false,"session ","org.apache.shiro.session.Session ","NULL ","","Exception ","",java.lang.IllegalArgumentException
+218,"IfStatement","null",true,"a join point ","org.aspectj.lang.JoinPoint org.aspectj.lang.reflect.AdviceSignature org.aspectj.lang.Signature ","","getSignature ","","",java.lang.IllegalArgumentException
+219,"CatchClause","java.lang.NoSuchMethodException",true,"bind ","java.lang.reflect.Constructor org.apache.shiro.mgt.DefaultSecurityManager com.google.inject.binder.ScopedBindingBuilder void java.util.Collection com.google.inject.binder.AnnotatedBindingBuilder com.google.inject.binder.AnnotatedBindingBuilder ","","toConstructor getConstructor asEagerSingleton ","","",org.apache.shiro.config.ConfigurationException
+220,"IfStatement","null",false,"config key ","java.lang.String boolean org.apache.shiro.web.filter.PathMatchingFilter java.lang.Class com.google.inject.TypeLiteral org.apache.shiro.util.StringUtils com.google.inject.Key com.google.inject.Key ","","getTypeLiteral hasText isAssignableFrom getRawType ","","",org.apache.shiro.config.ConfigurationException
+221,"CatchClause","java.lang.NoSuchMethodException",true,"bind ","org.apache.shiro.web.mgt.DefaultWebSecurityManager com.google.inject.binder.ScopedBindingBuilder void java.util.Collection java.lang.reflect.Constructor com.google.inject.binder.AnnotatedBindingBuilder com.google.inject.binder.AnnotatedBindingBuilder ","","toConstructor getConstructor asEagerSingleton ","","",org.apache.shiro.config.ConfigurationException
+222,"IfStatement","null",false,"","boolean ","","isGuiceVersion3 ","","",org.apache.shiro.config.ConfigurationException
+223,"IfStatement","null",false,"","java.lang.Class java.lang.Class boolean org.apache.shiro.authz.annotation.RequiresAuthentication ","","equals ","","",java.lang.IllegalArgumentException
+224,"IfStatement","null",true,"web security manager ","org.apache.shiro.web.mgt.WebSecurityManager ","NULL ","","","",java.lang.IllegalArgumentException
+225,"MethodDeclaration","null",true,"name method ","java.lang.String java.lang.reflect.Method boolean ","","equals getName ","","",java.lang.IllegalStateException
+226,"IfStatement","null",true,"servlet context environment_attribute_key ","java.lang.String javax.servlet.ServletContext java.lang.Object ","NULL ","getAttribute ","IllegalStateException ","java.lang.RuntimeException java.lang.Error ",java.lang.IllegalStateException
+227,"CatchClause","org.apache.shiro.util.UnknownClassException",false,"class name web environment class ","java.lang.String java.lang.Class java.lang.Class org.apache.shiro.util.ClassUtils ","","forName ","","",org.apache.shiro.config.ConfigurationException
+228,"IfStatement","null",false,"iterator ","java.util.Iterator boolean ","","hasNext ","","",org.apache.shiro.config.ConfigurationException
+229,"IfStatement","null",false,"web environment ","org.apache.shiro.web.env.WebEnvironment boolean org.apache.shiro.web.env.MutableWebEnvironment ","","isInstance ","","org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+230,"IfStatement","null",false,"config specified web environment ","boolean org.apache.shiro.web.env.WebEnvironment org.apache.shiro.config.ResourceConfigurable ","","isInstance ","","org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+231,"IfStatement","null",false,"ini ","org.apache.shiro.config.Ini boolean org.apache.shiro.util.CollectionUtils ","","isEmpty ","","",org.apache.shiro.config.ConfigurationException
+232,"IfStatement","null",true,"ini required ","boolean org.apache.shiro.config.Ini org.apache.shiro.util.CollectionUtils ","","isEmpty ","ConfigurationException ","",org.apache.shiro.config.ConfigurationException
+233,"IfStatement","null",true,"required ","boolean ","","","","org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+234,"IfStatement","null",true,"required ","boolean ","","","","org.apache.shiro.config.ConfigurationException ",org.apache.shiro.config.ConfigurationException
+235,"IfStatement","null",true,"locations ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+236,"IfStatement","null",true,"","org.apache.shiro.mgt.SecurityManager org.apache.shiro.web.mgt.WebSecurityManager ","","","","",java.lang.IllegalStateException
+237,"IfStatement","null",false,"token ","org.apache.shiro.authc.AuthenticationToken ","NULL ","","Exception ","",java.lang.IllegalStateException
+238,"IfStatement","null",true,"authorized hosts ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+239,"IfStatement","null",true,"denied hosts ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+240,"IfStatement","null",false,"length ports ","int java.lang.String ","","","","",org.apache.shiro.config.ConfigurationException
+241,"CatchClause","javax.servlet.ServletException",true,"config filter ","javax.servlet.FilterConfig javax.servlet.Filter void ","","init ","","",java.lang.IllegalStateException
+242,"IfStatement","null",true,"chain name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","java.lang.NullPointerException ",java.lang.NullPointerException
+243,"IfStatement","null",true,"chain definition ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","java.lang.NullPointerException ",java.lang.NullPointerException
+244,"IfStatement","null",false,"name ","java.lang.String ","NULL ","","ConfigurationException ","org.apache.shiro.config.ConfigurationException ",java.lang.IllegalArgumentException
+245,"CatchClause","java.lang.Exception",true,"config name token length stripped pair ","java.lang.String java.lang.String int org.apache.shiro.util.StringUtils boolean java.lang.IllegalArgumentException ","NULL Filter name not found for filter chain definition token:  ","clean substring length endsWith startsWith split indexOf ","ConfigurationException ","java.lang.IllegalArgumentException ",org.apache.shiro.config.ConfigurationException
+246,"IfStatement","null",true,"chain name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+247,"IfStatement","null",false,"filter ","javax.servlet.Filter ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+248,"IfStatement","null",true,"chain specific filter config ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",org.apache.shiro.config.ConfigurationException
+249,"IfStatement","null",false,"configured ","org.apache.shiro.web.filter.mgt.NamedFilterList ","NULL ","","","",java.lang.IllegalArgumentException
+250,"IfStatement","null",false,"filter config ","javax.servlet.FilterConfig ","NULL ","","","org.apache.shiro.config.ConfigurationException ",java.lang.IllegalStateException
+251,"CatchClause","javax.servlet.ServletException",true,"filter filter config ","javax.servlet.FilterConfig javax.servlet.Filter void ","","init ","","java.lang.IllegalStateException ",org.apache.shiro.config.ConfigurationException
+252,"IfStatement","null",true,"backing list ","java.util.List ","NULL ","","","",java.lang.NullPointerException
+253,"IfStatement","null",true,"name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+254,"IfStatement","null",false,"mode ","java.lang.String ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+255,"IfStatement","null",false,"http_session_mode native_session_mode mode ","java.lang.String boolean ","","equals ","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+256,"CatchClause","java.io.IOException",true,"encoded u r i name buf scheme port request relative path pos location leading slash ","java.lang.String java.lang.StringBuilder int boolean org.apache.shiro.web.servlet.ShiroHttpServletRequest java.net.URLEncoder ",":// http https 443 ","append equals lastIndexOf getRequestURI substring encode getCharacterEncoding ","","",java.lang.IllegalArgumentException
+257,"IfStatement","null",true,"orig ","javax.servlet.FilterChain ","NULL ","","","",java.lang.NullPointerException
+258,"IfStatement","null",true,"session ","org.apache.shiro.session.Session org.apache.shiro.web.session.HttpServletSession ","","","","",java.lang.IllegalArgumentException
+259,"CatchClause","java.lang.Exception",false,"","java.util.Date org.apache.shiro.session.Session long ","","getSession getTime getStartTimestamp ","","",java.lang.IllegalStateException
+260,"CatchClause","org.apache.shiro.session.InvalidSessionException",true,"","int org.apache.shiro.session.Session void ","1000L ","getSession setTimeout ","","",java.lang.IllegalStateException
+261,"CatchClause","org.apache.shiro.session.InvalidSessionException",false,"","int org.apache.shiro.session.Session java.lang.Long long ","1000 ","getSession intValue getTimeout ","","",java.lang.IllegalStateException
+262,"CatchClause","org.apache.shiro.session.InvalidSessionException",true,"","java.lang.String java.lang.Object org.apache.shiro.session.Session ","","getSession getAttribute ","","",java.lang.IllegalStateException
+263,"CatchClause","org.apache.shiro.session.InvalidSessionException",false,"key set ","java.util.Collection org.apache.shiro.session.Session ","","getSession getAttributeKeys ","","",java.lang.IllegalStateException
+264,"TryStatement","null",false,"","","","","","",java.lang.IllegalStateException
+265,"CatchClause","org.apache.shiro.session.InvalidSessionException",true,"attribute ","java.lang.Object java.lang.String org.apache.shiro.session.Session void ","","getSession afterUnbound removeAttribute ","","",java.lang.IllegalStateException
+266,"CatchClause","org.apache.shiro.session.InvalidSessionException",false,"","org.apache.shiro.session.Session void ","","getSession stop ","","",java.lang.IllegalStateException
+267,"IfStatement","null",false,"security manager ","org.apache.shiro.mgt.SecurityManager org.apache.shiro.web.mgt.WebSecurityManager ","","","","",org.apache.shiro.config.ConfigurationException
+268,"IfStatement","null",false,"ini ","org.apache.shiro.config.Ini ","NULL ","","","",org.apache.shiro.config.ConfigurationException
+269,"IfStatement","null",true,"name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalArgumentException
+270,"IfStatement","null",true,"name ","java.lang.String boolean org.apache.shiro.util.StringUtils ","","hasText ","","",java.lang.IllegalStateException
+271,"IfStatement","null",false,"servlet context ","javax.servlet.ServletContext ","NULL ","","","",java.lang.IllegalStateException
+272,"IfStatement","null",true,"http session ","javax.servlet.http.HttpSession ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+273,"IfStatement","null",true,"http session ","javax.servlet.http.HttpSession org.apache.shiro.web.servlet.ShiroHttpSession ","","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+274,"CatchClause","java.lang.Exception",false,"http session ","javax.servlet.http.HttpSession int ","1000L ","getMaxInactiveInterval ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+275,"CatchClause","java.lang.Exception",true,"max idle time in millis http session timeout ","int java.lang.Long long javax.servlet.http.HttpSession void ","1000 ","valueOf intValue setMaxInactiveInterval ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+276,"CatchClause","java.lang.Exception",false,"touch_object_session_key http session ","java.lang.String javax.servlet.http.HttpSession void ","","removeAttribute setAttribute ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+277,"CatchClause","java.lang.Exception",false,"http session ","javax.servlet.http.HttpSession void ","","invalidate ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+278,"CatchClause","java.lang.Exception",false,"names enum keys http session ","java.util.Enumeration java.util.Collection java.lang.Object boolean javax.servlet.http.HttpSession java.util.Enumeration java.util.ArrayList ","NULL ","getAttributeNames nextElement hasMoreElements add ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+279,"IfStatement","null",true,"key ","java.lang.Object java.lang.String ","","","","",java.lang.IllegalArgumentException
+280,"CatchClause","java.lang.Exception",true,"key http session ","java.lang.Object javax.servlet.http.HttpSession java.lang.String ","","getAttribute assertString ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+281,"CatchClause","java.lang.Exception",true,"key value http session ","java.lang.Object javax.servlet.http.HttpSession java.lang.String void ","","assertString setAttribute ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+282,"CatchClause","java.lang.Exception",true,"key http session s key removed ","java.lang.Object java.lang.String javax.servlet.http.HttpSession void ","","removeAttribute getAttribute assertString ","InvalidSessionException ","",org.apache.shiro.session.InvalidSessionException
+283,"IfStatement","null",true,"request ","javax.servlet.ServletRequest ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+284,"IfStatement","null",true,"response ","javax.servlet.ServletResponse ","NULL ","","","java.lang.NullPointerException ",java.lang.NullPointerException
+285,"IfStatement","null",true,"current id ","java.io.Serializable ","NULL ","","","",java.lang.IllegalArgumentException
+286,"IfStatement","null",true,"key ","org.apache.shiro.session.mgt.SessionKey org.apache.shiro.web.util.WebUtils boolean ","","isHttp ","SessionException ","",java.lang.IllegalArgumentException
+287,"IfStatement","null",true,"session context ","org.apache.shiro.session.mgt.SessionContext org.apache.shiro.web.util.WebUtils boolean ","","isHttp ","AuthorizationException ","",java.lang.IllegalArgumentException
+288,"IfStatement","null",true,"request ","javax.servlet.ServletRequest ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+289,"IfStatement","null",true,"response ","javax.servlet.ServletResponse ","NULL ","","","java.lang.IllegalArgumentException ",java.lang.IllegalArgumentException
+290,"IfStatement","null",false,"subject ","org.apache.shiro.subject.Subject org.apache.shiro.web.subject.WebSubject ","","","","",java.lang.IllegalStateException
+291,"IfStatement","null",false,"","org.apache.shiro.web.env.WebEnvironment ","NULL ","","IllegalStateException ","",java.lang.IllegalStateException
+292,"IfStatement","null",true,"","javax.servlet.ServletContext ","NULL ","","","java.lang.RuntimeException java.lang.Error java.lang.IllegalStateException java.lang.IllegalStateException ",java.lang.IllegalArgumentException
+293,"IfStatement","null",false,"attr ","java.lang.Object org.apache.shiro.web.env.WebEnvironment ","","","","java.lang.IllegalArgumentException java.lang.RuntimeException java.lang.Error java.lang.IllegalStateException ",java.lang.IllegalStateException
+294,"IfStatement","null",false,"success url ","java.lang.String ","NULL ","","IOException ","",java.lang.IllegalStateException
+295,"CatchClause","java.lang.InterruptedException",true,"millis ","long void java.lang.Thread ","","sleep ","","",java.lang.IllegalStateException
