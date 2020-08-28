@@ -1,4 +1,4 @@
-# Which Exception Shall Be Thrown?
+# Which Exception Shall We Throw?
 
 ## Project summary
 
