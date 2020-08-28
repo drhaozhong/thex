@@ -9,7 +9,7 @@ In this paper, we argue that a thrown exception can be also buggy. For example, 
 In this project, for the first time, we propose an approach to predict which exceptions shall be thrown under a given programming context. Its basic idea is to learn a classification model from the features that were extracted from thrown locations. 
 
 
-## Our extracted features
+## Our replicate data
 
 We used our tool to extract the features from nine projects, and dumped them into the arff files of weka. These files are uploaded: 
 [asm](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/asm.arff), [commons-io](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/commons-io.arff), [itext](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/itext.arff), [jfreechart](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/jfreechart.arff), [jmonkey](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/jmonkeyengine.arff), [lucene](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/lucene.arff), [pdfbox](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/pdfbox.arff), [poi](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/arff), and [shiro](https://anonymous.4open.science/r/bd485ee0-aa90-4159-a560-086e2ad595b5/shiro.arff).
